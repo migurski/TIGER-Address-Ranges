@@ -76,17 +76,67 @@ def features(layer):
                 fromadd, toadd, offset, zip
                 )
 
+def define_fields(source_layer, dest_layer):
+    ''' Define fields on a destination layer based on source layer.
+    '''
+    feature = source_layer.GetFeature(0)
+    fields = feature.GetFieldCount()
+    names = [feature.GetFieldDefnRef(i).name for i in range(fields)]
+    
+    mapping = (
+        ('STATEFP', 'STATEFP'),
+        ('COUNTYFP', 'COUNTYFP'),
+        ('FULLNAME', 'FULLNAME'),
+        ('MTFCC', 'MTFCC'),
+        ('LFROMADD', 'FROMADD'),
+        ('LTOADD', 'TOADD'),
+        ('OFFSETL', 'OFFSET'),
+        ('ZIPL', 'ZIP'),
+        )
+    
+    for (source_name, dest_name) in mapping:
+    
+        index = names.index(source_name)
+        type = feature.GetFieldDefnRef(index).type
+        width = feature.GetFieldDefnRef(index).width
+
+        field_defn = ogr.FieldDefn(dest_name, type)
+        field_defn.SetWidth(width)
+
+        dest_layer.CreateField(field_defn)
+
 if __name__ == '__main__':
 
+    # This. Is. Python.
+    ogr.UseExceptions()
+    
     input_fn = 'tl_2013_06075_edges.shp'
     input_ds = ogr.Open(input_fn)
     input_lyr = input_ds.GetLayer(0)
     
-    for (index, feature) in enumerate(features(input_lyr)):
-        shape, statefp, countyfp, fullname, mtfcc, fromadd, toadd, offset, zip = feature
+    output_dr = ogr.GetDriverByName('ESRI Shapefile')
+    output_ds = output_dr.CreateDataSource('output.shp')
+    output_lyr = output_ds.CreateLayer('', sref_na, ogr.wkbLineString)
+    
+    define_fields(input_lyr, output_lyr)
+    
+    for (index, details) in enumerate(features(input_lyr)):
+        shape, statefp, countyfp, fullname, mtfcc, fromadd, toadd, offset, zip = details
         
-        print feature
-        print shape
+        print statefp, countyfp, fullname
         
-        if index == 16:
-            break
+        feature = ogr.Feature(output_lyr.GetLayerDefn())
+
+        feature.SetField('STATEFP', statefp)
+        feature.SetField('COUNTYFP', countyfp)
+        feature.SetField('FULLNAME', fullname)
+        feature.SetField('MTFCC', mtfcc)
+        feature.SetField('FROMADD', fromadd)
+        feature.SetField('TOADD', toadd)
+        feature.SetField('OFFSET', offset)
+        feature.SetField('ZIP', zip)
+        
+        geometry = ogr.CreateGeometryFromWkb(wkb.dumps(shape))
+        feature.SetGeometry(geometry)
+        
+        output_lyr.CreateFeature(feature)
