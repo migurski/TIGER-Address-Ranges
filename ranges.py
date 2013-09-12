@@ -88,9 +88,9 @@ def features(layer):
 def define_fields(source_layer, dest_layer):
     ''' Define fields on a destination layer based on source layer.
     '''
-    feature = source_layer.GetFeature(0)
-    fields = feature.GetFieldCount()
-    names = [feature.GetFieldDefnRef(i).name for i in range(fields)]
+    source_defn = source_layer.GetLayerDefn()
+    fields = source_defn.GetFieldCount()
+    names = [source_defn.GetFieldDefn(i).name for i in range(fields)]
     
     mapping = (
         ('STATEFP', 'STATEFP'),
@@ -106,8 +106,8 @@ def define_fields(source_layer, dest_layer):
     for (source_name, dest_name) in mapping:
     
         index = names.index(source_name)
-        type = feature.GetFieldDefnRef(index).type
-        width = feature.GetFieldDefnRef(index).width
+        type = source_defn.GetFieldDefn(index).type
+        width = source_defn.GetFieldDefn(index).width
 
         field_defn = ogr.FieldDefn(dest_name, type)
         field_defn.SetWidth(width)
@@ -122,6 +122,10 @@ if __name__ == '__main__':
     input_fn = 'tl_2013_06075_edges.shp'
     input_ds = ogr.Open(input_fn)
     input_lyr = input_ds.GetLayer(0)
+    input_gt = input_lyr.GetLayerDefn().GetGeomType()
+    
+    if input_gt != ogr.wkbLineString:
+        raise ValueError('Wrong geometry type in %s: %d' % (input_fn, input_gt))
     
     output_dr = ogr.GetDriverByName('ESRI Shapefile')
     output_ds = output_dr.CreateDataSource('output.shp')
