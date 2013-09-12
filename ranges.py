@@ -8,6 +8,15 @@ from shapely import wkb
 sref_na = osr.SpatialReference()
 sref_na.ImportFromProj4('+proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs')
 
+#
+# Web Spherical Mercator
+# http://spatialreference.org/ref/sr-org/6864/
+#
+sref_sm = osr.SpatialReference()
+sref_sm.ImportFromProj4('+proj=merc +lon_0=0 +k=1 +x_0=0 +y_0=0 +a=6378137 +b=6378137 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs')
+
+xform_na2sm = osr.CoordinateTransformation(sref_na, sref_sm)
+
 def features(layer):
     ''' Generate a stream of left and right offset streets.
     
@@ -116,7 +125,7 @@ if __name__ == '__main__':
     
     output_dr = ogr.GetDriverByName('ESRI Shapefile')
     output_ds = output_dr.CreateDataSource('output.shp')
-    output_lyr = output_ds.CreateLayer('', sref_na, ogr.wkbLineString)
+    output_lyr = output_ds.CreateLayer('', sref_sm, ogr.wkbLineString)
     
     define_fields(input_lyr, output_lyr)
     
@@ -137,6 +146,7 @@ if __name__ == '__main__':
         feature.SetField('ZIP', zip)
         
         geometry = ogr.CreateGeometryFromWkb(wkb.dumps(shape))
+        geometry.Transform(xform_na2sm)
         feature.SetGeometry(geometry)
         
         output_lyr.CreateFeature(feature)
