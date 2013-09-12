@@ -1,4 +1,5 @@
 from osgeo import ogr, osr
+from shapely.geometry import LineString, Point
 from shapely import wkb
 
 #
@@ -79,8 +80,14 @@ def features(layer):
             offset  = feature.GetField(OFFSETR)
             zip     = feature.GetField(ZIPR)
             
+            #
+            # When offsetting to the right, coordinates come back reversed.
+            #
+            shape = shape.parallel_offset(5., 'right')
+            shape = LineString(list(reversed(shape.coords)))
+            
             yield (
-                shape.parallel_offset(5., 'right'),
+                shape,
                 statefp, countyfp, fullname, mtfcc,
                 fromadd, toadd, offset, zip
                 )
@@ -114,6 +121,52 @@ def define_fields(source_layer, dest_layer):
 
         dest_layer.CreateField(field_defn)
 
+def truncate(line, distance):
+    ''' Cut a line at both ends, if it's long enough.
+    
+        Borrowed from cut(), defined in Shapely docs:
+        http://toblerity.org/shapely/manual.html#object.project
+    '''
+    if distance <= 0. or line.length <= distance * 2:
+        return LineString(line)
+    
+    #
+    # Cut off the head.
+    #
+    coords = list(line.coords)
+    
+    for (i, p) in enumerate(coords):
+        pd = line.project(Point(p))
+        
+        if pd == distance:
+            # cut line here
+            _line = LineString(coords[i:])
+            break
+        
+        if pd > distance:
+            # cut line before this point
+            cp = line.interpolate(distance)
+            _line = LineString([(cp.x, cp.y)] + coords[i:])
+            break
+    
+    #
+    # Cut off the tail.
+    #
+    _coords = list(_line.coords)
+    _distance = _line.length - distance
+    
+    for (i, p) in reversed(list(enumerate(_coords))):
+        pd = _line.project(Point(p))
+        
+        if pd == _distance:
+            # cut line here
+            return LineString(_coords[:i+1])
+        
+        if pd < _distance:
+            # cut line before this point
+            cp = _line.interpolate(_distance)
+            return LineString(_coords[:i+1] + [(cp.x, cp.y)])
+
 if __name__ == '__main__':
 
     # This. Is. Python.
@@ -135,6 +188,7 @@ if __name__ == '__main__':
     
     for (index, details) in enumerate(features(input_lyr)):
         shape, statefp, countyfp, fullname, mtfcc, fromadd, toadd, offset, zip = details
+        shape = truncate(shape, 15)
         
         print statefp, countyfp, fullname
         
