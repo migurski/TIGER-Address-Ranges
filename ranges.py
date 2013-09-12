@@ -67,11 +67,15 @@ def features(layer):
             offset  = feature.GetField(OFFSETL)
             zip     = feature.GetField(ZIPL)
             
-            yield (
-                shape.parallel_offset(5., 'left'),
-                statefp, countyfp, fullname, mtfcc,
-                fromadd, toadd, offset, zip
-                )
+            shape_left = shape.parallel_offset(5., 'left')
+            geoms = getattr(shape_left, 'geoms', [shape_left])
+            
+            for geom in geoms:
+                yield (
+                    LineString(geom),
+                    statefp, countyfp, fullname, mtfcc,
+                    fromadd, toadd, offset, zip
+                    )
         
         if feature.GetField(RFROMADD):
             
@@ -80,17 +84,16 @@ def features(layer):
             offset  = feature.GetField(OFFSETR)
             zip     = feature.GetField(ZIPR)
             
-            #
-            # When offsetting to the right, coordinates come back reversed.
-            #
-            shape = shape.parallel_offset(5., 'right')
-            shape = LineString(list(reversed(shape.coords)))
+            shape_right = shape.parallel_offset(5., 'right')
+            geoms = getattr(shape_right, 'geoms', [shape_right])
             
-            yield (
-                shape,
-                statefp, countyfp, fullname, mtfcc,
-                fromadd, toadd, offset, zip
-                )
+            for geom in geoms:
+                # When offsetting to the right, coordinates come back reversed.
+                yield (
+                    LineString(list(reversed(geom.coords))),
+                    statefp, countyfp, fullname, mtfcc,
+                    fromadd, toadd, offset, zip
+                    )
 
 def define_fields(source_layer, dest_layer):
     ''' Define fields on a destination layer based on source layer.
@@ -172,7 +175,7 @@ if __name__ == '__main__':
     # This. Is. Python.
     ogr.UseExceptions()
     
-    input_fn = 'tl_2013_06075_edges.shp'
+    input_fn = 'tl_2013_06001_edges.shp'
     input_ds = ogr.Open(input_fn)
     input_lyr = input_ds.GetLayer(0)
     input_gt = input_lyr.GetLayerDefn().GetGeomType()
@@ -188,8 +191,7 @@ if __name__ == '__main__':
     
     for (index, details) in enumerate(features(input_lyr)):
         shape, statefp, countyfp, fullname, mtfcc, fromadd, toadd, offset, zip = details
-        shape = truncate(shape, 15)
-        
+
         print statefp, countyfp, fullname
         
         feature = ogr.Feature(output_lyr.GetLayerDefn())
@@ -203,7 +205,8 @@ if __name__ == '__main__':
         feature.SetField('OFFSET', offset)
         feature.SetField('ZIP', zip)
         
-        geometry = ogr.CreateGeometryFromWkb(wkb.dumps(shape))
+        truncated_shape = truncate(shape, 15)
+        geometry = ogr.CreateGeometryFromWkb(wkb.dumps(truncated_shape))
         geometry.Transform(xform_na2sm)
         feature.SetGeometry(geometry)
         
