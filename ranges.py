@@ -28,25 +28,25 @@ def features(layer):
     fields = feature.GetFieldCount()
     names = [feature.GetFieldDefnRef(i).name for i in range(fields)]
     
-    STATEFP  = names.index('STATEFP')
-    COUNTYFP = names.index('COUNTYFP')
-    ROADFLG  = names.index('ROADFLG')
-    MTFCC    = names.index('MTFCC')
+    #STATEFP  = names.index('STATEFP')
+    #COUNTYFP = names.index('COUNTYFP')
+    #ROADFLG  = names.index('ROADFLG')
+    MTFCC    = names.index('EDGE_MTFCC')
     FULLNAME = names.index('FULLNAME')
 
-    OFFSETL  = names.index('OFFSETL')
-    LFROMADD = names.index('LFROMADD')
-    LTOADD   = names.index('LTOADD')
+    PARITYL  = names.index('PARITYL')
+    LFROMHN  = names.index('LFROMHN')
+    LTOHN    = names.index('LTOHN')
     ZIPL     = names.index('ZIPL')
 
-    OFFSETR  = names.index('OFFSETR')
-    RFROMADD = names.index('RFROMADD')
-    RTOADD   = names.index('RTOADD')
+    PARITYR  = names.index('PARITYR')
+    RFROMHN  = names.index('RFROMHN')
+    RTOHN    = names.index('RTOHN')
     ZIPR     = names.index('ZIPR')
     
     for feature in layer:
-        if feature.GetField(ROADFLG) != 'Y':
-            continue
+        #if feature.GetField(ROADFLG) != 'Y':
+        #    continue
         
         geometry = feature.GetGeometryRef()
         geometry.TransformTo(sref_na)
@@ -55,16 +55,16 @@ def features(layer):
         if shape.length <= 40:
             continue
 
-        statefp  = feature.GetField(STATEFP)
-        countyfp = feature.GetField(COUNTYFP)
+        statefp  = None #feature.GetField(STATEFP)
+        countyfp = None #feature.GetField(COUNTYFP)
         fullname = feature.GetField(FULLNAME)
         mtfcc    = feature.GetField(MTFCC)
         
-        if feature.GetField(LFROMADD):
+        if feature.GetField(LFROMHN):
             
-            fromadd = feature.GetField(LFROMADD)
-            toadd   = feature.GetField(LTOADD)
-            offset  = feature.GetField(OFFSETL)
+            fromhn  = feature.GetField(LFROMHN)
+            tohn    = feature.GetField(LTOHN)
+            parity  = feature.GetField(PARITYL)
             zip     = feature.GetField(ZIPL)
             
             shape_left = shape.parallel_offset(5., 'left')
@@ -74,14 +74,14 @@ def features(layer):
                 yield (
                     LineString(geom),
                     statefp, countyfp, fullname, mtfcc,
-                    fromadd, toadd, offset, zip
+                    fromhn, tohn, parity, zip
                     )
         
-        if feature.GetField(RFROMADD):
+        if feature.GetField(RFROMHN):
             
-            fromadd = feature.GetField(RFROMADD)
-            toadd   = feature.GetField(RTOADD)
-            offset  = feature.GetField(OFFSETR)
+            fromhn  = feature.GetField(RFROMHN)
+            tohn    = feature.GetField(RTOHN)
+            parity  = feature.GetField(PARITYR)
             zip     = feature.GetField(ZIPR)
             
             shape_right = shape.parallel_offset(5., 'right')
@@ -92,7 +92,7 @@ def features(layer):
                 yield (
                     LineString(list(reversed(geom.coords))),
                     statefp, countyfp, fullname, mtfcc,
-                    fromadd, toadd, offset, zip
+                    fromhn, tohn, parity, zip
                     )
 
 def define_fields(source_layer, dest_layer):
@@ -103,13 +103,13 @@ def define_fields(source_layer, dest_layer):
     names = [source_defn.GetFieldDefn(i).name for i in range(fields)]
     
     mapping = (
-        ('STATEFP', 'STATEFP'),
-        ('COUNTYFP', 'COUNTYFP'),
+        #('STATEFP', 'STATEFP'),
+        #('COUNTYFP', 'COUNTYFP'),
         ('FULLNAME', 'FULLNAME'),
-        ('MTFCC', 'MTFCC'),
-        ('LFROMADD', 'FROMADD'),
-        ('LTOADD', 'TOADD'),
-        ('OFFSETL', 'OFFSET'),
+        ('EDGE_MTFCC', 'MTFCC'),
+        ('LFROMHN', 'FROMHN'),
+        ('LTOHN', 'TOHN'),
+        ('PARITYL', 'PARITY'),
         ('ZIPL', 'ZIP'),
         )
     
@@ -175,7 +175,7 @@ if __name__ == '__main__':
     # This. Is. Python.
     ogr.UseExceptions()
     
-    input_fn = 'tl_2013_06001_edges.shp'
+    input_fn = 'tl_2013_06075_addrfeat.shp'
     input_ds = ogr.Open(input_fn)
     input_lyr = input_ds.GetLayer(0)
     input_gt = input_lyr.GetLayerDefn().GetGeomType()
@@ -190,19 +190,19 @@ if __name__ == '__main__':
     define_fields(input_lyr, output_lyr)
     
     for (index, details) in enumerate(features(input_lyr)):
-        shape, statefp, countyfp, fullname, mtfcc, fromadd, toadd, offset, zip = details
+        shape, statefp, countyfp, fullname, mtfcc, fromhn, tohn, parity, zip = details
 
-        print statefp, countyfp, fullname
+        print zip, fullname
         
         feature = ogr.Feature(output_lyr.GetLayerDefn())
 
-        feature.SetField('STATEFP', statefp)
-        feature.SetField('COUNTYFP', countyfp)
+        #feature.SetField('STATEFP', statefp)
+        #feature.SetField('COUNTYFP', countyfp)
         feature.SetField('FULLNAME', fullname)
         feature.SetField('MTFCC', mtfcc)
-        feature.SetField('FROMADD', fromadd)
-        feature.SetField('TOADD', toadd)
-        feature.SetField('OFFSET', offset)
+        feature.SetField('FROMHN', fromhn)
+        feature.SetField('TOHN', tohn)
+        feature.SetField('PARITY', parity)
         feature.SetField('ZIP', zip)
         
         truncated_shape = truncate(shape, 15)
