@@ -1,0 +1,3110 @@
+fips	county	plane
+01001	Autauga County	w
+01003	Baldwin County	w
+01007	Bibb County	w
+01009	Blount County	w
+01013	Butler County	w
+01021	Chilton County	w
+01023	Choctaw County	w
+01025	Clarke County	w
+01033	Colbert County	w
+01035	Conecuh County	w
+01043	Cullman County	w
+01047	Dallas County	w
+01053	Escambia County	w
+01057	Fayette County	w
+01059	Franklin County	w
+01063	Greene County	w
+01065	Hale County	w
+01073	Jefferson County	w
+01075	Lamar County	w
+01077	Lauderdale County	w
+01079	Lawrence County	w
+01083	Limestone County	w
+01085	Lowndes County	w
+01091	Marengo County	w
+01093	Marion County	w
+01097	Mobile County	w
+01099	Monroe County	w
+01103	Morgan County	w
+01105	Perry County	w
+01107	Pickens County	w
+01117	Shelby County	w
+01119	Sumter County	w
+01125	Tuscaloosa County	w
+01127	Walker County	w
+01129	Washington County	w
+01131	Wilcox County	w
+01133	Winston County	w
+01005	Barbour County	e
+01011	Bullock County	e
+01015	Calhoun County	e
+01017	Chambers County	e
+01019	Cherokee County	e
+01027	Clay County	e
+01029	Cleburne County	e
+01031	Coffee County	e
+01037	Coosa County	e
+01039	Covington County	e
+01041	Crenshaw County	e
+01045	Dale County	e
+01049	DeKalb County	e
+01051	Elmore County	e
+01055	Etowah County	e
+01061	Geneva County	e
+01067	Henry County	e
+01069	Houston County	e
+01071	Jackson County	e
+01081	Lee County	e
+01087	Macon County	e
+01089	Madison County	e
+01095	Marshall County	e
+01101	Montgomery County	e
+01109	Pike County	e
+01111	Randolph County	e
+01113	Russell County	e
+01115	St. Clair County	e
+01121	Talladega County	e
+01123	Tallapoosa County	e
+04012	La Paz County	w
+04015	Mohave County	w
+04027	Yuma County	w
+04005	Coconino County	c
+04013	Maricopa County	c
+04019	Pima County	c
+04021	Pinal County	c
+04023	Santa Cruz County	c
+04025	Yavapai County	c
+04001	Apache County	e
+04003	Cochise County	e
+04007	Gila County	e
+04009	Graham County	e
+04011	Greenlee County	e
+04017	Navajo County	e
+05005	Baxter County	n
+05007	Benton County	n
+05009	Boone County	n
+05015	Carroll County	n
+05021	Clay County	n
+05023	Cleburne County	n
+05029	Conway County	n
+05031	Craighead County	n
+05033	Crawford County	n
+05035	Crittenden County	n
+05037	Cross County	n
+05045	Faulkner County	n
+05047	Franklin County	n
+05049	Fulton County	n
+05055	Greene County	n
+05063	Independence County	n
+05065	Izard County	n
+05067	Jackson County	n
+05071	Johnson County	n
+05075	Lawrence County	n
+05083	Logan County	n
+05087	Madison County	n
+05089	Marion County	n
+05093	Mississippi County	n
+05101	Newton County	n
+05105	Perry County	n
+05111	Poinsett County	n
+05115	Pope County	n
+05119	Pulaski County	n
+05121	Randolph County	n
+05123	St. Francis County	n
+05127	Scott County	n
+05129	Searcy County	n
+05131	Sebastian County	n
+05135	Sharp County	n
+05137	Stone County	n
+05141	Van Buren County	n
+05143	Washington County	n
+05145	White County	n
+05147	Woodruff County	n
+05149	Yell County	n
+05001	Arkansas County	s
+05003	Ashley County	s
+05011	Bradley County	s
+05013	Calhoun County	s
+05017	Chicot County	s
+05019	Clark County	s
+05025	Cleveland County	s
+05027	Columbia County	s
+05039	Dallas County	s
+05041	Desha County	s
+05043	Drew County	s
+05051	Garland County	s
+05053	Grant County	s
+05057	Hempstead County	s
+05059	Hot Spring County	s
+05061	Howard County	s
+05069	Jefferson County	s
+05073	Lafayette County	s
+05077	Lee County	s
+05079	Lincoln County	s
+05081	Little River County	s
+05085	Lonoke County	s
+05091	Miller County	s
+05095	Monroe County	s
+05097	Montgomery County	s
+05099	Nevada County	s
+05103	Ouachita County	s
+05107	Phillips County	s
+05109	Pike County	s
+05113	Polk County	s
+05117	Prairie County	s
+05125	Saline County	s
+05133	Sevier County	s
+05139	Union County	s
+06015	Del Norte County	i
+06023	Humboldt County	i
+06035	Lassen County	i
+06049	Modoc County	i
+06063	Plumas County	i
+06089	Shasta County	i
+06093	Siskiyou County	i
+06103	Tehama County	i
+06105	Trinity County	i
+06003	Alpine County	ii
+06005	Amador County	ii
+06007	Butte County	ii
+06011	Colusa County	ii
+06017	El Dorado County	ii
+06021	Glenn County	ii
+06033	Lake County	ii
+06045	Mendocino County	ii
+06055	Napa County	ii
+06057	Nevada County	ii
+06061	Placer County	ii
+06067	Sacramento County	ii
+06091	Sierra County	ii
+06095	Solano County	ii
+06097	Sonoma County	ii
+06101	Sutter County	ii
+06113	Yolo County	ii
+06115	Yuba County	ii
+06001	Alameda County	iii
+06009	Calaveras County	iii
+06013	Contra Costa County	iii
+06039	Madera County	iii
+06041	Marin County	iii
+06043	Mariposa County	iii
+06047	Merced County	iii
+06051	Mono County	iii
+06075	San Francisco County	iii
+06077	San Joaquin County	iii
+06081	San Mateo County	iii
+06085	Santa Clara County	iii
+06087	Santa Cruz County	iii
+06099	Stanislaus County	iii
+06109	Tuolumne County	iii
+06019	Fresno County	iv
+06027	Inyo County	iv
+06031	Kings County	iv
+06053	Monterey County	iv
+06069	San Benito County	iv
+06107	Tulare County	iv
+06029	Kern County	v
+06037	Los Angeles County	v
+06071	San Bernardino County	v
+06079	San Luis Obispo County	v
+06083	Santa Barbara County	v
+06111	Ventura County	v
+06025	Imperial County	vi
+06059	Orange County	vi
+06065	Riverside County	vi
+06073	San Diego County	vi
+08001	Adams County	n
+08013	Boulder County	n
+08014	Broomfield County	n
+08047	Gilpin County	n
+08049	Grand County	n
+08057	Jackson County	n
+08069	Larimer County	n
+08075	Logan County	n
+08081	Moffat County	n
+08087	Morgan County	n
+08095	Phillips County	n
+08103	Rio Blanco County	n
+08107	Routt County	n
+08115	Sedgwick County	n
+08121	Washington County	n
+08123	Weld County	n
+08125	Yuma County	n
+08005	Arapahoe County	c
+08015	Chaffee County	c
+08017	Cheyenne County	c
+08019	Clear Creek County	c
+08029	Delta County	c
+08031	Denver County	c
+08035	Douglas County	c
+08037	Eagle County	c
+08039	Elbert County	c
+08041	El Paso County	c
+08043	Fremont County	c
+08045	Garfield County	c
+08051	Gunnison County	c
+08059	Jefferson County	c
+08063	Kit Carson County	c
+08065	Lake County	c
+08073	Lincoln County	c
+08077	Mesa County	c
+08093	Park County	c
+08097	Pitkin County	c
+08117	Summit County	c
+08119	Teller County	c
+08003	Alamosa County	s
+08007	Archuleta County	s
+08009	Baca County	s
+08011	Bent County	s
+08021	Conejos County	s
+08023	Costilla County	s
+08025	Crowley County	s
+08027	Custer County	s
+08033	Dolores County	s
+08053	Hinsdale County	s
+08055	Huerfano County	s
+08061	Kiowa County	s
+08067	La Plata County	s
+08071	Las Animas County	s
+08079	Mineral County	s
+08083	Montezuma County	s
+08085	Montrose County	s
+08089	Otero County	s
+08091	Ouray County	s
+08099	Prowers County	s
+08101	Pueblo County	s
+08105	Rio Grande County	s
+08109	Saguache County	s
+08111	San Juan County	s
+08113	San Miguel County	s
+09001	Fairfield County	
+09003	Hartford County	
+09005	Litchfield County	
+09007	Middlesex County	
+09009	New Haven County	
+09011	New London County	
+09013	Tolland County	
+09015	Windham County	
+10001	Kent County	
+10003	New Castle County	
+10005	Sussex County	
+11001	District of Columbia	
+12001	Alachua County	n
+12003	Baker County	n
+12005	Bay County	n
+12007	Bradford County	n
+12013	Calhoun County	n
+12023	Columbia County	n
+12029	Dixie County	n
+12033	Escambia County	n
+12037	Franklin County	n
+12039	Gadsden County	n
+12041	Gilchrist County	n
+12045	Gulf County	n
+12047	Hamilton County	n
+12059	Holmes County	n
+12063	Jackson County	n
+12065	Jefferson County	n
+12067	Lafayette County	n
+12073	Leon County	n
+12077	Liberty County	n
+12079	Madison County	n
+12091	Okaloosa County	n
+12113	Santa Rosa County	n
+12121	Suwannee County	n
+12123	Taylor County	n
+12125	Union County	n
+12129	Wakulla County	n
+12131	Walton County	n
+12133	Washington County	n
+12015	Charlotte County	w
+12017	Citrus County	w
+12027	DeSoto County	w
+12049	Hardee County	w
+12053	Hernando County	w
+12057	Hillsborough County	w
+12071	Lee County	w
+12075	Levy County	w
+12081	Manatee County	w
+12083	Marion County	w
+12101	Pasco County	w
+12103	Pinellas County	w
+12105	Polk County	w
+12115	Sarasota County	w
+12119	Sumter County	w
+12009	Brevard County	e
+12011	Broward County	e
+12019	Clay County	e
+12021	Collier County	e
+12031	Duval County	e
+12035	Flagler County	e
+12043	Glades County	e
+12051	Hendry County	e
+12055	Highlands County	e
+12061	Indian River County	e
+12069	Lake County	e
+12085	Martin County	e
+12086	Miami Dade County	e
+12087	Monroe County	e
+12089	Nassau County	e
+12093	Okeechobee County	e
+12095	Orange County	e
+12097	Osceola County	e
+12099	Palm Beach County	e
+12107	Putnam County	e
+12109	St. Johns County	e
+12111	St. Lucie County	e
+12117	Seminole County	e
+12127	Volusia County	e
+13007	Baker County	w
+13011	Banks County	w
+13013	Barrow County	w
+13015	Bartow County	w
+13017	Ben Hill County	w
+13019	Berrien County	w
+13021	Bibb County	w
+13023	Bleckley County	w
+13027	Brooks County	w
+13035	Butts County	w
+13037	Calhoun County	w
+13045	Carroll County	w
+13047	Catoosa County	w
+13053	Chattahoochee County	w
+13055	Chattooga County	w
+13057	Cherokee County	w
+13059	Clarke County	w
+13061	Clay County	w
+13063	Clayton County	w
+13067	Cobb County	w
+13071	Colquitt County	w
+13075	Cook County	w
+13077	Coweta County	w
+13079	Crawford County	w
+13081	Crisp County	w
+13083	Dade County	w
+13085	Dawson County	w
+13087	Decatur County	w
+13089	DeKalb County	w
+13093	Dooly County	w
+13095	Dougherty County	w
+13097	Douglas County	w
+13099	Early County	w
+13111	Fannin County	w
+13113	Fayette County	w
+13115	Floyd County	w
+13117	Forsyth County	w
+13121	Fulton County	w
+13123	Gilmer County	w
+13129	Gordon County	w
+13131	Grady County	w
+13135	Gwinnett County	w
+13137	Habersham County	w
+13139	Hall County	w
+13143	Haralson County	w
+13145	Harris County	w
+13149	Heard County	w
+13151	Henry County	w
+13153	Houston County	w
+13155	Irwin County	w
+13157	Jackson County	w
+13159	Jasper County	w
+13169	Jones County	w
+13171	Lamar County	w
+13173	Lanier County	w
+13177	Lee County	w
+13185	Lowndes County	w
+13187	Lumpkin County	w
+13193	Macon County	w
+13197	Marion County	w
+13199	Meriwether County	w
+13201	Miller County	w
+13205	Mitchell County	w
+13207	Monroe County	w
+13211	Morgan County	w
+13213	Murray County	w
+13215	Muscogee County	w
+13217	Newton County	w
+13219	Oconee County	w
+13223	Paulding County	w
+13225	Peach County	w
+13227	Pickens County	w
+13231	Pike County	w
+13233	Polk County	w
+13235	Pulaski County	w
+13237	Putnam County	w
+13239	Quitman County	w
+13241	Rabun County	w
+13243	Randolph County	w
+13247	Rockdale County	w
+13249	Schley County	w
+13253	Seminole County	w
+13255	Spalding County	w
+13259	Stewart County	w
+13261	Sumter County	w
+13263	Talbot County	w
+13269	Taylor County	w
+13273	Terrell County	w
+13275	Thomas County	w
+13277	Tift County	w
+13281	Towns County	w
+13285	Troup County	w
+13287	Turner County	w
+13289	Twiggs County	w
+13291	Union County	w
+13293	Upson County	w
+13295	Walker County	w
+13297	Walton County	w
+13307	Webster County	w
+13311	White County	w
+13313	Whitfield County	w
+13315	Wilcox County	w
+13321	Worth County	w
+13001	Appling County	e
+13003	Atkinson County	e
+13005	Bacon County	e
+13009	Baldwin County	e
+13025	Brantley County	e
+13029	Bryan County	e
+13031	Bulloch County	e
+13033	Burke County	e
+13039	Camden County	e
+13043	Candler County	e
+13049	Charlton County	e
+13051	Chatham County	e
+13065	Clinch County	e
+13069	Coffee County	e
+13073	Columbia County	e
+13091	Dodge County	e
+13101	Echols County	e
+13103	Effingham County	e
+13105	Elbert County	e
+13107	Emanuel County	e
+13109	Evans County	e
+13119	Franklin County	e
+13125	Glascock County	e
+13127	Glynn County	e
+13133	Greene County	e
+13141	Hancock County	e
+13147	Hart County	e
+13161	Jeff Davis County	e
+13163	Jefferson County	e
+13165	Jenkins County	e
+13167	Johnson County	e
+13175	Laurens County	e
+13179	Liberty County	e
+13181	Lincoln County	e
+13183	Long County	e
+13189	McDuffie County	e
+13191	McIntosh County	e
+13195	Madison County	e
+13209	Montgomery County	e
+13221	Oglethorpe County	e
+13229	Pierce County	e
+13245	Richmond County	e
+13251	Screven County	e
+13257	Stephens County	e
+13265	Taliaferro County	e
+13267	Tattnall County	e
+13271	Telfair County	e
+13279	Toombs County	e
+13283	Treutlen County	e
+13299	Ware County	e
+13301	Warren County	e
+13303	Washington County	e
+13305	Wayne County	e
+13309	Wheeler County	e
+13317	Wilkes County	e
+13319	Wilkinson County	e
+16001	Ada County	w
+16003	Adams County	w
+16009	Benewah County	w
+16015	Boise County	w
+16017	Bonner County	w
+16021	Boundary County	w
+16027	Canyon County	w
+16035	Clearwater County	w
+16039	Elmore County	w
+16045	Gem County	w
+16049	Idaho County	w
+16055	Kootenai County	w
+16057	Latah County	w
+16061	Lewis County	w
+16069	Nez Perce County	w
+16073	Owyhee County	w
+16075	Payette County	w
+16079	Shoshone County	w
+16085	Valley County	w
+16087	Washington County	w
+16013	Blaine County	c
+16023	Butte County	c
+16025	Camas County	c
+16031	Cassia County	c
+16037	Custer County	c
+16047	Gooding County	c
+16053	Jerome County	c
+16059	Lemhi County	c
+16063	Lincoln County	c
+16067	Minidoka County	c
+16083	Twin Falls County	c
+16005	Bannock County	e
+16007	Bear Lake County	e
+16011	Bingham County	e
+16019	Bonneville County	e
+16029	Caribou County	e
+16033	Clark County	e
+16041	Franklin County	e
+16043	Fremont County	e
+16051	Jefferson County	e
+16065	Madison County	e
+16071	Oneida County	e
+16077	Power County	e
+16081	Teton County	e
+17001	Adams County	w
+17003	Alexander County	w
+17005	Bond County	w
+17009	Brown County	w
+17011	Bureau County	w
+17013	Calhoun County	w
+17015	Carroll County	w
+17017	Cass County	w
+17021	Christian County	w
+17027	Clinton County	w
+17057	Fulton County	w
+17061	Greene County	w
+17067	Hancock County	w
+17071	Henderson County	w
+17073	Henry County	w
+17077	Jackson County	w
+17083	Jersey County	w
+17085	Jo Daviess County	w
+17095	Knox County	w
+17103	Lee County	w
+17107	Logan County	w
+17117	Macoupin County	w
+17119	Madison County	w
+17123	Marshall County	w
+17125	Mason County	w
+17109	McDonough County	w
+17129	Menard County	w
+17131	Mercer County	w
+17133	Monroe County	w
+17135	Montgomery County	w
+17137	Morgan County	w
+17141	Ogle County	w
+17143	Peoria County	w
+17145	Perry County	w
+17149	Pike County	w
+17153	Pulaski County	w
+17155	Putnam County	w
+17157	Randolph County	w
+17161	Rock Island County	w
+17163	St. Clair County	w
+17167	Sangamon County	w
+17169	Schuyler County	w
+17171	Scott County	w
+17175	Stark County	w
+17177	Stephenson County	w
+17179	Tazewell County	w
+17181	Union County	w
+17187	Warren County	w
+17189	Washington County	w
+17195	Whiteside County	w
+17201	Winnebago County	w
+17203	Woodford County	w
+17007	Boone County	e
+17019	Champaign County	e
+17023	Clark County	e
+17025	Clay County	e
+17029	Coles County	e
+17031	Cook County	e
+17033	Crawford County	e
+17035	Cumberland County	e
+17037	DeKalb County	e
+17039	De Witt County	e
+17041	Douglas County	e
+17043	DuPage County	e
+17045	Edgar County	e
+17047	Edwards County	e
+17049	Effingham County	e
+17051	Fayette County	e
+17053	Ford County	e
+17055	Franklin County	e
+17059	Gallatin County	e
+17063	Grundy County	e
+17065	Hamilton County	e
+17069	Hardin County	e
+17075	Iroquois County	e
+17079	Jasper County	e
+17081	Jefferson County	e
+17087	Johnson County	e
+17089	Kane County	e
+17091	Kankakee County	e
+17093	Kendall County	e
+17097	Lake County	e
+17099	LaSalle County	e
+17101	Lawrence County	e
+17105	Livingston County	e
+17111	McHenry County	e
+17113	McLean County	e
+17115	Macon County	e
+17121	Marion County	e
+17127	Massac County	e
+17139	Moultrie County	e
+17147	Piatt County	e
+17151	Pope County	e
+17159	Richland County	e
+17165	Saline County	e
+17173	Shelby County	e
+17183	Vermilion County	e
+17185	Wabash County	e
+17191	Wayne County	e
+17193	White County	e
+17197	Will County	e
+17199	Williamson County	e
+18007	Benton County	w
+18011	Boone County	w
+18015	Carroll County	w
+18021	Clay County	w
+18023	Clinton County	w
+18025	Crawford County	w
+18027	Daviess County	w
+18037	Dubois County	w
+18045	Fountain County	w
+18051	Gibson County	w
+18055	Greene County	w
+18063	Hendricks County	w
+18071	Jackson County	w
+18083	Knox County	w
+18091	LaPorte County	w
+18089	Lake County	w
+18093	Lawrence County	w
+18101	Martin County	w
+18105	Monroe County	w
+18107	Montgomery County	w
+18109	Morgan County	w
+18111	Newton County	w
+18117	Orange County	w
+18119	Owen County	w
+18121	Parke County	w
+18123	Perry County	w
+18125	Pike County	w
+18127	Porter County	w
+18129	Posey County	w
+18131	Pulaski County	w
+18133	Putnam County	w
+18147	Spencer County	w
+18149	Starke County	w
+18153	Sullivan County	w
+18157	Tippecanoe County	w
+18163	Vanderburgh County	w
+18165	Vermillion County	w
+18167	Vigo County	w
+18171	Warren County	w
+18173	Warrick County	w
+18181	White County	w
+18001	Adams County	e
+18003	Allen County	e
+18005	Bartholomew County	e
+18009	Blackford County	e
+18013	Brown County	e
+18017	Cass County	e
+18019	Clark County	e
+18029	Dearborn County	e
+18031	Decatur County	e
+18033	DeKalb County	e
+18035	Delaware County	e
+18039	Elkhart County	e
+18041	Fayette County	e
+18043	Floyd County	e
+18047	Franklin County	e
+18049	Fulton County	e
+18053	Grant County	e
+18057	Hamilton County	e
+18059	Hancock County	e
+18061	Harrison County	e
+18065	Henry County	e
+18067	Howard County	e
+18069	Huntington County	e
+18073	Jasper County	e
+18075	Jay County	e
+18077	Jefferson County	e
+18079	Jennings County	e
+18081	Johnson County	e
+18085	Kosciusko County	e
+18087	LaGrange County	e
+18095	Madison County	e
+18097	Marion County	e
+18099	Marshall County	e
+18103	Miami County	e
+18113	Noble County	e
+18115	Ohio County	e
+18135	Randolph County	e
+18137	Ripley County	e
+18139	Rush County	e
+18141	St. Joseph County	e
+18143	Scott County	e
+18145	Shelby County	e
+18151	Steuben County	e
+18155	Switzerland County	e
+18159	Tipton County	e
+18161	Union County	e
+18169	Wabash County	e
+18175	Washington County	e
+18177	Wayne County	e
+18179	Wells County	e
+18183	Whitley County	e
+19005	Allamakee County	n
+19011	Benton County	n
+19013	Black Hawk County	n
+19015	Boone County	n
+19017	Bremer County	n
+19019	Buchanan County	n
+19021	Buena Vista County	n
+19023	Butler County	n
+19025	Calhoun County	n
+19027	Carroll County	n
+19033	Cerro Gordo County	n
+19035	Cherokee County	n
+19037	Chickasaw County	n
+19041	Clay County	n
+19043	Clayton County	n
+19047	Crawford County	n
+19055	Delaware County	n
+19059	Dickinson County	n
+19061	Dubuque County	n
+19063	Emmet County	n
+19065	Fayette County	n
+19067	Floyd County	n
+19069	Franklin County	n
+19073	Greene County	n
+19075	Grundy County	n
+19079	Hamilton County	n
+19081	Hancock County	n
+19083	Hardin County	n
+19089	Howard County	n
+19091	Humboldt County	n
+19093	Ida County	n
+19097	Jackson County	n
+19105	Jones County	n
+19109	Kossuth County	n
+19113	Linn County	n
+19119	Lyon County	n
+19127	Marshall County	n
+19131	Mitchell County	n
+19133	Monona County	n
+19141	OBrien County	n
+19143	Osceola County	n
+19147	Palo Alto County	n
+19149	Plymouth County	n
+19151	Pocahontas County	n
+19161	Sac County	n
+19167	Sioux County	n
+19169	Story County	n
+19171	Tama County	n
+19187	Webster County	n
+19189	Winnebago County	n
+19191	Winneshiek County	n
+19193	Woodbury County	n
+19195	Worth County	n
+19197	Wright County	n
+19001	Adair County	s
+19003	Adams County	s
+19007	Appanoose County	s
+19009	Audubon County	s
+19029	Cass County	s
+19031	Cedar County	s
+19039	Clarke County	s
+19045	Clinton County	s
+19049	Dallas County	s
+19051	Davis County	s
+19053	Decatur County	s
+19057	Des Moines County	s
+19071	Fremont County	s
+19077	Guthrie County	s
+19085	Harrison County	s
+19087	Henry County	s
+19095	Iowa County	s
+19099	Jasper County	s
+19101	Jefferson County	s
+19103	Johnson County	s
+19107	Keokuk County	s
+19111	Lee County	s
+19115	Louisa County	s
+19117	Lucas County	s
+19121	Madison County	s
+19123	Mahaska County	s
+19125	Marion County	s
+19129	Mills County	s
+19135	Monroe County	s
+19137	Montgomery County	s
+19139	Muscatine County	s
+19145	Page County	s
+19153	Polk County	s
+19155	Pottawattamie County	s
+19157	Poweshiek County	s
+19159	Ringgold County	s
+19163	Scott County	s
+19165	Shelby County	s
+19173	Taylor County	s
+19175	Union County	s
+19177	Van Buren County	s
+19179	Wapello County	s
+19181	Warren County	s
+19183	Washington County	s
+19185	Wayne County	s
+20005	Atchison County	n
+20013	Brown County	n
+20023	Cheyenne County	n
+20027	Clay County	n
+20029	Cloud County	n
+20039	Decatur County	n
+20041	Dickinson County	n
+20043	Doniphan County	n
+20045	Douglas County	n
+20051	Ellis County	n
+20053	Ellsworth County	n
+20061	Geary County	n
+20063	Gove County	n
+20065	Graham County	n
+20085	Jackson County	n
+20087	Jefferson County	n
+20089	Jewell County	n
+20091	Johnson County	n
+20103	Leavenworth County	n
+20105	Lincoln County	n
+20109	Logan County	n
+20117	Marshall County	n
+20123	Mitchell County	n
+20127	Morris County	n
+20131	Nemaha County	n
+20137	Norton County	n
+20141	Osborne County	n
+20143	Ottawa County	n
+20147	Phillips County	n
+20149	Pottawatomie County	n
+20153	Rawlins County	n
+20157	Republic County	n
+20161	Riley County	n
+20163	Rooks County	n
+20167	Russell County	n
+20169	Saline County	n
+20177	Shawnee County	n
+20179	Sheridan County	n
+20181	Sherman County	n
+20183	Smith County	n
+20193	Thomas County	n
+20195	Trego County	n
+20197	Wabaunsee County	n
+20199	Wallace County	n
+20201	Washington County	n
+20209	Wyandotte County	n
+20001	Allen County	s
+20003	Anderson County	s
+20007	Barber County	s
+20009	Barton County	s
+20011	Bourbon County	s
+20015	Butler County	s
+20017	Chase County	s
+20019	Chautauqua County	s
+20021	Cherokee County	s
+20025	Clark County	s
+20031	Coffey County	s
+20033	Comanche County	s
+20035	Cowley County	s
+20037	Crawford County	s
+20047	Edwards County	s
+20049	Elk County	s
+20055	Finney County	s
+20057	Ford County	s
+20059	Franklin County	s
+20067	Grant County	s
+20069	Gray County	s
+20071	Greeley County	s
+20073	Greenwood County	s
+20075	Hamilton County	s
+20077	Harper County	s
+20079	Harvey County	s
+20081	Haskell County	s
+20083	Hodgeman County	s
+20093	Kearny County	s
+20095	Kingman County	s
+20097	Kiowa County	s
+20099	Labette County	s
+20101	Lane County	s
+20107	Linn County	s
+20111	Lyon County	s
+20113	McPherson County	s
+20115	Marion County	s
+20119	Meade County	s
+20121	Miami County	s
+20125	Montgomery County	s
+20129	Morton County	s
+20133	Neosho County	s
+20135	Ness County	s
+20139	Osage County	s
+20145	Pawnee County	s
+20151	Pratt County	s
+20155	Reno County	s
+20159	Rice County	s
+20165	Rush County	s
+20171	Scott County	s
+20173	Sedgwick County	s
+20175	Seward County	s
+20185	Stafford County	s
+20187	Stanton County	s
+20189	Stevens County	s
+20191	Sumner County	s
+20203	Wichita County	s
+20205	Wilson County	s
+20207	Woodson County	s
+21005	Anderson County	n
+21011	Bath County	n
+21015	Boone County	n
+21017	Bourbon County	n
+21019	Boyd County	n
+21023	Bracken County	n
+21029	Bullitt County	n
+21037	Campbell County	n
+21041	Carroll County	n
+21043	Carter County	n
+21049	Clark County	n
+21063	Elliott County	n
+21067	Fayette County	n
+21069	Fleming County	n
+21073	Franklin County	n
+21077	Gallatin County	n
+21081	Grant County	n
+21089	Greenup County	n
+21097	Harrison County	n
+21103	Henry County	n
+21111	Jefferson County	n
+21113	Jessamine County	n
+21117	Kenton County	n
+21127	Lawrence County	n
+21135	Lewis County	n
+21161	Mason County	n
+21165	Menifee County	n
+21173	Montgomery County	n
+21175	Morgan County	n
+21181	Nicholas County	n
+21185	Oldham County	n
+21187	Owen County	n
+21191	Pendleton County	n
+21201	Robertson County	n
+21205	Rowan County	n
+21209	Scott County	n
+21211	Shelby County	n
+21215	Spencer County	n
+21223	Trimble County	n
+21239	Woodford County	n
+21001	Adair County	s
+21003	Allen County	s
+21007	Ballard County	s
+21009	Barren County	s
+21013	Bell County	s
+21021	Boyle County	s
+21025	Breathitt County	s
+21027	Breckinridge County	s
+21031	Butler County	s
+21033	Caldwell County	s
+21035	Calloway County	s
+21039	Carlisle County	s
+21045	Casey County	s
+21047	Christian County	s
+21051	Clay County	s
+21053	Clinton County	s
+21055	Crittenden County	s
+21057	Cumberland County	s
+21059	Daviess County	s
+21061	Edmonson County	s
+21065	Estill County	s
+21071	Floyd County	s
+21075	Fulton County	s
+21079	Garrard County	s
+21083	Graves County	s
+21085	Grayson County	s
+21087	Green County	s
+21091	Hancock County	s
+21093	Hardin County	s
+21095	Harlan County	s
+21099	Hart County	s
+21101	Henderson County	s
+21105	Hickman County	s
+21107	Hopkins County	s
+21109	Jackson County	s
+21115	Johnson County	s
+21119	Knott County	s
+21121	Knox County	s
+21123	Larue County	s
+21125	Laurel County	s
+21129	Lee County	s
+21131	Leslie County	s
+21133	Letcher County	s
+21137	Lincoln County	s
+21139	Livingston County	s
+21141	Logan County	s
+21143	Lyon County	s
+21145	McCracken County	s
+21147	McCreary County	s
+21149	McLean County	s
+21151	Madison County	s
+21153	Magoffin County	s
+21155	Marion County	s
+21157	Marshall County	s
+21159	Martin County	s
+21163	Meade County	s
+21167	Mercer County	s
+21169	Metcalfe County	s
+21171	Monroe County	s
+21177	Muhlenberg County	s
+21179	Nelson County	s
+21183	Ohio County	s
+21189	Owsley County	s
+21193	Perry County	s
+21195	Pike County	s
+21197	Powell County	s
+21199	Pulaski County	s
+21203	Rockcastle County	s
+21207	Russell County	s
+21213	Simpson County	s
+21217	Taylor County	s
+21219	Todd County	s
+21221	Trigg County	s
+21225	Union County	s
+21227	Warren County	s
+21229	Washington County	s
+21231	Wayne County	s
+21233	Webster County	s
+21235	Whitley County	s
+21237	Wolfe County	s
+22009	Avoyelles Parish	n
+22013	Bienville Parish	n
+22015	Bossier Parish	n
+22017	Caddo Parish	n
+22021	Caldwell Parish	n
+22025	Catahoula Parish	n
+22027	Claiborne Parish	n
+22029	Concordia Parish	n
+22031	De Soto Parish	n
+22035	East Carroll Parish	n
+22041	Franklin Parish	n
+22043	Grant Parish	n
+22049	Jackson Parish	n
+22059	La Salle Parish	n
+22061	Lincoln Parish	n
+22065	Madison Parish	n
+22067	Morehouse Parish	n
+22069	Natchitoches Parish	n
+22073	Ouachita Parish	n
+22079	Rapides Parish	n
+22081	Red River Parish	n
+22083	Richland Parish	n
+22085	Sabine Parish	n
+22107	Tensas Parish	n
+22111	Union Parish	n
+22115	Vernon Parish	n
+22119	Webster Parish	n
+22123	West Carroll Parish	n
+22127	Winn Parish	n
+22001	Acadia Parish	s
+22003	Allen Parish	s
+22005	Ascension Parish	s
+22007	Assumption Parish	s
+22011	Beauregard Parish	s
+22019	Calcasieu Parish	s
+22023	Cameron Parish	s
+22033	East Baton Rouge Parish	s
+22037	East Feliciana Parish	s
+22039	Evangeline Parish	s
+22045	Iberia Parish	s
+22047	Iberville Parish	s
+22051	Jefferson Parish	s
+22053	Jefferson Davis Parish	s
+22055	Lafayette Parish	s
+22057	Lafourche Parish	s
+22063	Livingston Parish	s
+22071	Orleans Parish	s
+22075	Plaquemines Parish	s
+22077	Pointe Coupee Parish	s
+22087	St. Bernard Parish	s
+22089	St. Charles Parish	s
+22091	St. Helena Parish	s
+22093	St. James Parish	s
+22095	St. John the Baptist Parish	s
+22097	St. Landry Parish	s
+22099	St. Martin Parish	s
+22101	St. Mary Parish	s
+22103	St. Tammany Parish	s
+22105	Tangipahoa Parish	s
+22109	Terrebonne Parish	s
+22113	Vermilion Parish	s
+22117	Washington Parish	s
+22121	West Baton Rouge Parish	s
+22125	West Feliciana Parish	s
+23001	Androscoggin County	w
+23005	Cumberland County	w
+23007	Franklin County	w
+23011	Kennebec County	w
+23015	Lincoln County	w
+23017	Oxford County	w
+23023	Sagadahoc County	w
+23025	Somerset County	w
+23031	York County	w
+23003	Aroostook County	e
+23009	Hancock County	e
+23013	Knox County	e
+23019	Penobscot County	e
+23021	Piscataquis County	e
+23027	Waldo County	e
+23029	Washington County	e
+24001	Allegany County	
+24003	Anne Arundel County	
+24005	Baltimore County	
+24009	Calvert County	
+24011	Caroline County	
+24013	Carroll County	
+24015	Cecil County	
+24017	Charles County	
+24019	Dorchester County	
+24021	Frederick County	
+24023	Garrett County	
+24025	Harford County	
+24027	Howard County	
+24029	Kent County	
+24031	Montgomery County	
+24033	Prince Georges County	
+24035	Queen Annes County	
+24037	St. Marys County	
+24039	Somerset County	
+24041	Talbot County	
+24043	Washington County	
+24045	Wicomico County	
+24047	Worcester County	
+24510	Baltimore city	
+25001	Barnstable County	m
+25003	Berkshire County	m
+25005	Bristol County	m
+25009	Essex County	m
+25011	Franklin County	m
+25013	Hampden County	m
+25015	Hampshire County	m
+25017	Middlesex County	m
+25021	Norfolk County	m
+25023	Plymouth County	m
+25025	Suffolk County	m
+25027	Worcester County	m
+25007	Dukes County	i
+25019	Nantucket County	i
+26003	Alger County	n
+26013	Baraga County	n
+26033	Chippewa County	n
+26041	Delta County	n
+26043	Dickinson County	n
+26053	Gogebic County	n
+26061	Houghton County	n
+26071	Iron County	n
+26083	Keweenaw County	n
+26095	Luce County	n
+26097	Mackinac County	n
+26103	Marquette County	n
+26109	Menominee County	n
+26131	Ontonagon County	n
+26153	Schoolcraft County	n
+26001	Alcona County	c
+26007	Alpena County	c
+26009	Antrim County	c
+26011	Arenac County	c
+26019	Benzie County	c
+26029	Charlevoix County	c
+26031	Cheboygan County	c
+26035	Clare County	c
+26039	Crawford County	c
+26047	Emmet County	c
+26051	Gladwin County	c
+26055	Grand Traverse County	c
+26069	Iosco County	c
+26079	Kalkaska County	c
+26085	Lake County	c
+26089	Leelanau County	c
+26101	Manistee County	c
+26105	Mason County	c
+26113	Missaukee County	c
+26119	Montmorency County	c
+26129	Ogemaw County	c
+26133	Osceola County	c
+26135	Oscoda County	c
+26137	Otsego County	c
+26141	Presque Isle County	c
+26143	Roscommon County	c
+26165	Wexford County	c
+26005	Allegan County	s
+26015	Barry County	s
+26017	Bay County	s
+26021	Berrien County	s
+26023	Branch County	s
+26025	Calhoun County	s
+26027	Cass County	s
+26037	Clinton County	s
+26045	Eaton County	s
+26049	Genesee County	s
+26057	Gratiot County	s
+26059	Hillsdale County	s
+26063	Huron County	s
+26065	Ingham County	s
+26067	Ionia County	s
+26073	Isabella County	s
+26075	Jackson County	s
+26077	Kalamazoo County	s
+26081	Kent County	s
+26087	Lapeer County	s
+26091	Lenawee County	s
+26093	Livingston County	s
+26099	Macomb County	s
+26107	Mecosta County	s
+26111	Midland County	s
+26115	Monroe County	s
+26117	Montcalm County	s
+26121	Muskegon County	s
+26123	Newaygo County	s
+26125	Oakland County	s
+26127	Oceana County	s
+26139	Ottawa County	s
+26145	Saginaw County	s
+26147	St. Clair County	s
+26149	St. Joseph County	s
+26151	Sanilac County	s
+26155	Shiawassee County	s
+26157	Tuscola County	s
+26159	Van Buren County	s
+26161	Washtenaw County	s
+26163	Wayne County	s
+27007	Beltrami County	n
+27029	Clearwater County	n
+27031	Cook County	n
+27061	Itasca County	n
+27069	Kittson County	n
+27071	Koochiching County	n
+27077	Lake of the Woods County	n
+27075	Lake County	n
+27087	Mahnomen County	n
+27089	Marshall County	n
+27107	Norman County	n
+27113	Pennington County	n
+27119	Polk County	n
+27125	Red Lake County	n
+27135	Roseau County	n
+27137	St. Louis County	n
+27001	Aitkin County	c
+27005	Becker County	c
+27009	Benton County	c
+27017	Carlton County	c
+27021	Cass County	c
+27025	Chisago County	c
+27027	Clay County	c
+27035	Crow Wing County	c
+27041	Douglas County	c
+27051	Grant County	c
+27057	Hubbard County	c
+27059	Isanti County	c
+27065	Kanabec County	c
+27095	Mille Lacs County	c
+27097	Morrison County	c
+27111	Otter Tail County	c
+27115	Pine County	c
+27121	Pope County	c
+27145	Stearns County	c
+27149	Stevens County	c
+27153	Todd County	c
+27155	Traverse County	c
+27159	Wadena County	c
+27167	Wilkin County	c
+27003	Anoka County	s
+27011	Big Stone County	s
+27013	Blue Earth County	s
+27015	Brown County	s
+27019	Carver County	s
+27023	Chippewa County	s
+27033	Cottonwood County	s
+27037	Dakota County	s
+27039	Dodge County	s
+27043	Faribault County	s
+27045	Fillmore County	s
+27047	Freeborn County	s
+27049	Goodhue County	s
+27053	Hennepin County	s
+27055	Houston County	s
+27063	Jackson County	s
+27067	Kandiyohi County	s
+27073	Lac qui Parle County	s
+27079	Le Sueur County	s
+27081	Lincoln County	s
+27083	Lyon County	s
+27085	McLeod County	s
+27091	Martin County	s
+27093	Meeker County	s
+27099	Mower County	s
+27101	Murray County	s
+27103	Nicollet County	s
+27105	Nobles County	s
+27109	Olmsted County	s
+27117	Pipestone County	s
+27123	Ramsey County	s
+27127	Redwood County	s
+27129	Renville County	s
+27131	Rice County	s
+27133	Rock County	s
+27139	Scott County	s
+27141	Sherburne County	s
+27143	Sibley County	s
+27147	Steele County	s
+27151	Swift County	s
+27157	Wabasha County	s
+27161	Waseca County	s
+27163	Washington County	s
+27165	Watonwan County	s
+27169	Winona County	s
+27171	Wright County	s
+27173	Yellow Medicine County	s
+28001	Adams County	w
+28005	Amite County	w
+28011	Bolivar County	w
+28015	Carroll County	w
+28021	Claiborne County	w
+28027	Coahoma County	w
+28029	Copiah County	w
+28033	DeSoto County	w
+28037	Franklin County	w
+28043	Grenada County	w
+28049	Hinds County	w
+28051	Holmes County	w
+28053	Humphreys County	w
+28055	Issaquena County	w
+28063	Jefferson County	w
+28065	Jefferson Davis County	w
+28077	Lawrence County	w
+28083	Leflore County	w
+28085	Lincoln County	w
+28089	Madison County	w
+28091	Marion County	w
+28097	Montgomery County	w
+28107	Panola County	w
+28113	Pike County	w
+28119	Quitman County	w
+28121	Rankin County	w
+28125	Sharkey County	w
+28127	Simpson County	w
+28133	Sunflower County	w
+28135	Tallahatchie County	w
+28137	Tate County	w
+28143	Tunica County	w
+28147	Walthall County	w
+28149	Warren County	w
+28151	Washington County	w
+28157	Wilkinson County	w
+28161	Yalobusha County	w
+28163	Yazoo County	w
+28003	Alcorn County	e
+28007	Attala County	e
+28009	Benton County	e
+28013	Calhoun County	e
+28017	Chickasaw County	e
+28019	Choctaw County	e
+28023	Clarke County	e
+28025	Clay County	e
+28031	Covington County	e
+28035	Forrest County	e
+28039	George County	e
+28041	Greene County	e
+28045	Hancock County	e
+28047	Harrison County	e
+28057	Itawamba County	e
+28059	Jackson County	e
+28061	Jasper County	e
+28067	Jones County	e
+28069	Kemper County	e
+28071	Lafayette County	e
+28073	Lamar County	e
+28075	Lauderdale County	e
+28079	Leake County	e
+28081	Lee County	e
+28087	Lowndes County	e
+28093	Marshall County	e
+28095	Monroe County	e
+28099	Neshoba County	e
+28101	Newton County	e
+28103	Noxubee County	e
+28105	Oktibbeha County	e
+28109	Pearl River County	e
+28111	Perry County	e
+28115	Pontotoc County	e
+28117	Prentiss County	e
+28123	Scott County	e
+28129	Smith County	e
+28131	Stone County	e
+28139	Tippah County	e
+28141	Tishomingo County	e
+28145	Union County	e
+28153	Wayne County	e
+28155	Webster County	e
+28159	Winston County	e
+29003	Andrew County	w
+29005	Atchison County	w
+29009	Barry County	w
+29011	Barton County	w
+29013	Bates County	w
+29021	Buchanan County	w
+29025	Caldwell County	w
+29037	Cass County	w
+29039	Cedar County	w
+29047	Clay County	w
+29049	Clinton County	w
+29057	Dade County	w
+29061	Daviess County	w
+29063	DeKalb County	w
+29075	Gentry County	w
+29081	Harrison County	w
+29083	Henry County	w
+29087	Holt County	w
+29097	Jasper County	w
+29095	Jackson County	w
+29101	Johnson County	w
+29107	Lafayette County	w
+29109	Lawrence County	w
+29119	McDonald County	w
+29145	Newton County	w
+29147	Nodaway County	w
+29165	Platte County	w
+29177	Ray County	w
+29185	St. Clair County	w
+29217	Vernon County	w
+29227	Worth County	w
+29001	Adair County	c
+29007	Audrain County	c
+29015	Benton County	c
+29019	Boone County	c
+29027	Callaway County	c
+29029	Camden County	c
+29033	Carroll County	c
+29041	Chariton County	c
+29043	Christian County	c
+29051	Cole County	c
+29053	Cooper County	c
+29059	Dallas County	c
+29067	Douglas County	c
+29077	Greene County	c
+29079	Grundy County	c
+29085	Hickory County	c
+29089	Howard County	c
+29091	Howell County	c
+29103	Knox County	c
+29105	Laclede County	c
+29115	Linn County	c
+29117	Livingston County	c
+29121	Macon County	c
+29125	Maries County	c
+29129	Mercer County	c
+29131	Miller County	c
+29135	Moniteau County	c
+29137	Monroe County	c
+29141	Morgan County	c
+29151	Osage County	c
+29153	Ozark County	c
+29157	Perry County	c
+29159	Pettis County	c
+29161	Phelps County	c
+29167	Polk County	c
+29169	Pulaski County	c
+29171	Putnam County	c
+29175	Randolph County	c
+29195	Saline County	c
+29197	Schuyler County	c
+29199	Scotland County	c
+29205	Shelby County	c
+29209	Stone County	c
+29211	Sullivan County	c
+29213	Taney County	c
+29215	Texas County	c
+29225	Webster County	c
+29229	Wright County	c
+29017	Bollinger County	e
+29023	Butler County	e
+29031	Cape Girardeau County	e
+29035	Carter County	e
+29045	Clark County	e
+29055	Crawford County	e
+29065	Dent County	e
+29069	Dunklin County	e
+29071	Franklin County	e
+29073	Gasconade County	e
+29093	Iron County	e
+29099	Jefferson County	e
+29111	Lewis County	e
+29113	Lincoln County	e
+29123	Madison County	e
+29127	Marion County	e
+29133	Mississippi County	e
+29139	Montgomery County	e
+29143	New Madrid County	e
+29149	Oregon County	e
+29155	Pemiscot County	e
+29163	Pike County	e
+29173	Ralls County	e
+29179	Reynolds County	e
+29181	Ripley County	e
+29183	St. Charles County	e
+29186	Ste. Genevieve County	e
+29187	St. Francois County	e
+29189	St. Louis County	e
+29201	Scott County	e
+29203	Shannon County	e
+29510	St. Louis city	e
+29207	Stoddard County	e
+29219	Warren County	e
+29221	Washington County	e
+29223	Wayne County	e
+30005	Blaine County	n
+30015	Chouteau County	n
+30019	Daniels County	n
+30029	Flathead County	n
+30035	Glacier County	n
+30041	Hill County	n
+30051	Liberty County	n
+30053	Lincoln County	n
+30071	Phillips County	n
+30073	Pondera County	n
+30085	Roosevelt County	n
+30091	Sheridan County	n
+30099	Teton County	n
+30101	Toole County	n
+30105	Valley County	n
+30013	Cascade County	c
+30021	Dawson County	c
+30027	Fergus County	c
+30033	Garfield County	c
+30045	Judith Basin County	c
+30047	Lake County	c
+30049	Lewis and Clark County	c
+30055	McCone County	c
+30059	Meagher County	c
+30061	Mineral County	c
+30063	Missoula County	c
+30069	Petroleum County	c
+30077	Powell County	c
+30079	Prairie County	c
+30083	Richland County	c
+30089	Sanders County	c
+30109	Wibaux County	c
+30001	Beaverhead County	s
+30003	Big Horn County	s
+30007	Broadwater County	s
+30009	Carbon County	s
+30011	Carter County	s
+30017	Custer County	s
+30023	Deer Lodge County	s
+30025	Fallon County	s
+30031	Gallatin County	s
+30037	Golden Valley County	s
+30039	Granite County	s
+30043	Jefferson County	s
+30057	Madison County	s
+30065	Musselshell County	s
+30067	Park County	s
+30075	Powder River County	s
+30081	Ravalli County	s
+30087	Rosebud County	s
+30093	Silver Bow County	s
+30095	Stillwater County	s
+30097	Sweet Grass County	s
+30103	Treasure County	s
+30107	Wheatland County	s
+30111	Yellowstone County	s
+31003	Antelope County	n
+31009	Blaine County	n
+31013	Box Butte County	n
+31015	Boyd County	n
+31017	Brown County	n
+31021	Burt County	n
+31027	Cedar County	n
+31031	Cherry County	n
+31039	Cuming County	n
+31043	Dakota County	n
+31045	Dawes County	n
+31051	Dixon County	n
+31071	Garfield County	n
+31075	Grant County	n
+31089	Holt County	n
+31091	Hooker County	n
+31103	Keya Paha County	n
+31107	Knox County	n
+31115	Loup County	n
+31119	Madison County	n
+31139	Pierce County	n
+31149	Rock County	n
+31161	Sheridan County	n
+31165	Sioux County	n
+31167	Stanton County	n
+31171	Thomas County	n
+31173	Thurston County	n
+31179	Wayne County	n
+31183	Wheeler County	n
+31001	Adams County	s
+31005	Arthur County	s
+31007	Banner County	s
+31011	Boone County	s
+31019	Buffalo County	s
+31023	Butler County	s
+31025	Cass County	s
+31029	Chase County	s
+31033	Cheyenne County	s
+31035	Clay County	s
+31037	Colfax County	s
+31041	Custer County	s
+31047	Dawson County	s
+31049	Deuel County	s
+31053	Dodge County	s
+31055	Douglas County	s
+31057	Dundy County	s
+31059	Fillmore County	s
+31061	Franklin County	s
+31063	Frontier County	s
+31065	Furnas County	s
+31067	Gage County	s
+31069	Garden County	s
+31073	Gosper County	s
+31077	Greeley County	s
+31079	Hall County	s
+31081	Hamilton County	s
+31083	Harlan County	s
+31085	Hayes County	s
+31087	Hitchcock County	s
+31093	Howard County	s
+31095	Jefferson County	s
+31097	Johnson County	s
+31099	Kearney County	s
+31101	Keith County	s
+31105	Kimball County	s
+31109	Lancaster County	s
+31111	Lincoln County	s
+31113	Logan County	s
+31117	McPherson County	s
+31121	Merrick County	s
+31123	Morrill County	s
+31125	Nance County	s
+31127	Nemaha County	s
+31129	Nuckolls County	s
+31131	Otoe County	s
+31133	Pawnee County	s
+31135	Perkins County	s
+31137	Phelps County	s
+31141	Platte County	s
+31143	Polk County	s
+31145	Red Willow County	s
+31147	Richardson County	s
+31151	Saline County	s
+31153	Sarpy County	s
+31155	Saunders County	s
+31157	Scotts Bluff County	s
+31159	Seward County	s
+31163	Sherman County	s
+31169	Thayer County	s
+31175	Valley County	s
+31177	Washington County	s
+31181	Webster County	s
+31185	York County	s
+32001	Churchill County	w
+32005	Douglas County	w
+32009	Esmeralda County	w
+32013	Humboldt County	w
+32019	Lyon County	w
+32021	Mineral County	w
+32027	Pershing County	w
+32029	Storey County	w
+32031	Washoe County	w
+32510	Carson City	w
+32015	Lander County	c
+32023	Nye County	c
+32003	Clark County	e
+32007	Elko County	e
+32011	Eureka County	e
+32017	Lincoln County	e
+32033	White Pine County	e
+33001	Belknap County	
+33003	Carroll County	
+33005	Cheshire County	
+33007	Coos County	
+33009	Grafton County	
+33011	Hillsborough County	
+33013	Merrimack County	
+33015	Rockingham County	
+33017	Strafford County	
+33019	Sullivan County	
+34001	Atlantic County	
+34003	Bergen County	
+34005	Burlington County	
+34007	Camden County	
+34009	Cape May County	
+34011	Cumberland County	
+34013	Essex County	
+34015	Gloucester County	
+34017	Hudson County	
+34019	Hunterdon County	
+34021	Mercer County	
+34023	Middlesex County	
+34025	Monmouth County	
+34027	Morris County	
+34029	Ocean County	
+34031	Passaic County	
+34033	Salem County	
+34035	Somerset County	
+34037	Sussex County	
+34039	Union County	
+34041	Warren County	
+35003	Catron County	w
+35006	Cibola County	w
+35017	Grant County	w
+35023	Hidalgo County	w
+35029	Luna County	w
+35031	McKinley County	w
+35045	San Juan County	w
+35051	Sierra County	w
+35001	Bernalillo County	c
+35013	Dona Ana County	c
+35027	Lincoln County	c
+35028	Los Alamos County	c
+35035	Otero County	c
+35039	Rio Arriba County	c
+35043	Sandoval County	c
+35049	Santa Fe County	c
+35053	Socorro County	c
+35055	Taos County	c
+35057	Torrance County	c
+35061	Valencia County	c
+35005	Chaves County	e
+35007	Colfax County	e
+35009	Curry County	e
+35011	De Baca County	e
+35015	Eddy County	e
+35019	Guadalupe County	e
+35021	Harding County	e
+35025	Lea County	e
+35033	Mora County	e
+35037	Quay County	e
+35041	Roosevelt County	e
+35047	San Miguel County	e
+35059	Union County	e
+36003	Allegany County	w
+36009	Cattaraugus County	w
+36013	Chautauqua County	w
+36029	Erie County	w
+36037	Genesee County	w
+36051	Livingston County	w
+36055	Monroe County	w
+36063	Niagara County	w
+36073	Orleans County	w
+36121	Wyoming County	w
+36007	Broome County	c
+36011	Cayuga County	c
+36015	Chemung County	c
+36017	Chenango County	c
+36023	Cortland County	c
+36045	Jefferson County	c
+36049	Lewis County	c
+36053	Madison County	c
+36065	Oneida County	c
+36067	Onondaga County	c
+36069	Ontario County	c
+36075	Oswego County	c
+36097	Schuyler County	c
+36099	Seneca County	c
+36101	Steuben County	c
+36107	Tioga County	c
+36109	Tompkins County	c
+36117	Wayne County	c
+36123	Yates County	c
+36001	Albany County	e
+36019	Clinton County	e
+36021	Columbia County	e
+36025	Delaware County	e
+36027	Dutchess County	e
+36031	Essex County	e
+36033	Franklin County	e
+36035	Fulton County	e
+36039	Greene County	e
+36041	Hamilton County	e
+36043	Herkimer County	e
+36057	Montgomery County	e
+36071	Orange County	e
+36077	Otsego County	e
+36079	Putnam County	e
+36083	Rensselaer County	e
+36087	Rockland County	e
+36089	St. Lawrence County	e
+36091	Saratoga County	e
+36093	Schenectady County	e
+36095	Schoharie County	e
+36105	Sullivan County	e
+36111	Ulster County	e
+36113	Warren County	e
+36115	Washington County	e
+36119	Westchester County	e
+36005	Bronx County	li
+36047	Kings County	li
+36059	Nassau County	li
+36061	New York County	li
+36081	Queens County	li
+36085	Richmond County	li
+36103	Suffolk County	li
+37001	Alamance County	
+37003	Alexander County	
+37005	Alleghany County	
+37007	Anson County	
+37009	Ashe County	
+37011	Avery County	
+37013	Beaufort County	
+37015	Bertie County	
+37017	Bladen County	
+37019	Brunswick County	
+37021	Buncombe County	
+37023	Burke County	
+37025	Cabarrus County	
+37027	Caldwell County	
+37029	Camden County	
+37031	Carteret County	
+37033	Caswell County	
+37035	Catawba County	
+37037	Chatham County	
+37039	Cherokee County	
+37041	Chowan County	
+37043	Clay County	
+37045	Cleveland County	
+37047	Columbus County	
+37049	Craven County	
+37051	Cumberland County	
+37053	Currituck County	
+37055	Dare County	
+37057	Davidson County	
+37059	Davie County	
+37061	Duplin County	
+37063	Durham County	
+37065	Edgecombe County	
+37067	Forsyth County	
+37069	Franklin County	
+37071	Gaston County	
+37073	Gates County	
+37075	Graham County	
+37077	Granville County	
+37079	Greene County	
+37081	Guilford County	
+37083	Halifax County	
+37085	Harnett County	
+37087	Haywood County	
+37089	Henderson County	
+37091	Hertford County	
+37093	Hoke County	
+37095	Hyde County	
+37097	Iredell County	
+37099	Jackson County	
+37101	Johnston County	
+37103	Jones County	
+37105	Lee County	
+37107	Lenoir County	
+37109	Lincoln County	
+37111	McDowell County	
+37113	Macon County	
+37115	Madison County	
+37117	Martin County	
+37119	Mecklenburg County	
+37121	Mitchell County	
+37123	Montgomery County	
+37125	Moore County	
+37127	Nash County	
+37129	New Hanover County	
+37131	Northampton County	
+37133	Onslow County	
+37135	Orange County	
+37137	Pamlico County	
+37139	Pasquotank County	
+37141	Pender County	
+37143	Perquimans County	
+37145	Person County	
+37147	Pitt County	
+37149	Polk County	
+37151	Randolph County	
+37153	Richmond County	
+37155	Robeson County	
+37157	Rockingham County	
+37159	Rowan County	
+37161	Rutherford County	
+37163	Sampson County	
+37165	Scotland County	
+37167	Stanly County	
+37169	Stokes County	
+37171	Surry County	
+37173	Swain County	
+37175	Transylvania County	
+37177	Tyrrell County	
+37179	Union County	
+37181	Vance County	
+37183	Wake County	
+37185	Warren County	
+37187	Washington County	
+37189	Watauga County	
+37191	Wayne County	
+37193	Wilkes County	
+37195	Wilson County	
+37197	Yadkin County	
+37199	Yancey County	
+38005	Benson County	n
+38009	Bottineau County	n
+38013	Burke County	n
+38019	Cavalier County	n
+38023	Divide County	n
+38027	Eddy County	n
+38031	Foster County	n
+38035	Grand Forks County	n
+38039	Griggs County	n
+38049	McHenry County	n
+38053	McKenzie County	n
+38055	McLean County	n
+38061	Mountrail County	n
+38063	Nelson County	n
+38067	Pembina County	n
+38069	Pierce County	n
+38071	Ramsey County	n
+38075	Renville County	n
+38079	Rolette County	n
+38083	Sheridan County	n
+38091	Steele County	n
+38095	Towner County	n
+38097	Traill County	n
+38099	Walsh County	n
+38101	Ward County	n
+38103	Wells County	n
+38105	Williams County	n
+38001	Adams County	s
+38003	Barnes County	s
+38007	Billings County	s
+38011	Bowman County	s
+38015	Burleigh County	s
+38017	Cass County	s
+38021	Dickey County	s
+38025	Dunn County	s
+38029	Emmons County	s
+38033	Golden Valley County	s
+38037	Grant County	s
+38041	Hettinger County	s
+38043	Kidder County	s
+38045	LaMoure County	s
+38047	Logan County	s
+38051	McIntosh County	s
+38057	Mercer County	s
+38059	Morton County	s
+38065	Oliver County	s
+38073	Ransom County	s
+38077	Richland County	s
+38081	Sargent County	s
+38085	Sioux County	s
+38087	Slope County	s
+38089	Stark County	s
+38093	Stutsman County	s
+39003	Allen County	n
+39005	Ashland County	n
+39007	Ashtabula County	n
+39011	Auglaize County	n
+39019	Carroll County	n
+39029	Columbiana County	n
+39031	Coshocton County	n
+39033	Crawford County	n
+39035	Cuyahoga County	n
+39039	Defiance County	n
+39041	Delaware County	n
+39043	Erie County	n
+39051	Fulton County	n
+39055	Geauga County	n
+39063	Hancock County	n
+39065	Hardin County	n
+39067	Harrison County	n
+39069	Henry County	n
+39075	Holmes County	n
+39077	Huron County	n
+39081	Jefferson County	n
+39083	Knox County	n
+39085	Lake County	n
+39091	Logan County	n
+39093	Lorain County	n
+39095	Lucas County	n
+39099	Mahoning County	n
+39101	Marion County	n
+39103	Medina County	n
+39107	Mercer County	n
+39117	Morrow County	n
+39123	Ottawa County	n
+39125	Paulding County	n
+39133	Portage County	n
+39137	Putnam County	n
+39139	Richland County	n
+39143	Sandusky County	n
+39147	Seneca County	n
+39149	Shelby County	n
+39151	Stark County	n
+39153	Summit County	n
+39155	Trumbull County	n
+39157	Tuscarawas County	n
+39159	Union County	n
+39161	Van Wert County	n
+39169	Wayne County	n
+39171	Williams County	n
+39173	Wood County	n
+39175	Wyandot County	n
+39001	Adams County	s
+39009	Athens County	s
+39013	Belmont County	s
+39015	Brown County	s
+39017	Butler County	s
+39021	Champaign County	s
+39023	Clark County	s
+39025	Clermont County	s
+39027	Clinton County	s
+39037	Darke County	s
+39045	Fairfield County	s
+39047	Fayette County	s
+39049	Franklin County	s
+39053	Gallia County	s
+39057	Greene County	s
+39059	Guernsey County	s
+39061	Hamilton County	s
+39071	Highland County	s
+39073	Hocking County	s
+39079	Jackson County	s
+39087	Lawrence County	s
+39089	Licking County	s
+39097	Madison County	s
+39105	Meigs County	s
+39109	Miami County	s
+39111	Monroe County	s
+39113	Montgomery County	s
+39115	Morgan County	s
+39119	Muskingum County	s
+39121	Noble County	s
+39127	Perry County	s
+39129	Pickaway County	s
+39131	Pike County	s
+39135	Preble County	s
+39141	Ross County	s
+39145	Scioto County	s
+39163	Vinton County	s
+39165	Warren County	s
+39167	Washington County	s
+40001	Adair County	n
+40003	Alfalfa County	n
+40007	Beaver County	n
+40011	Blaine County	n
+40017	Canadian County	n
+40021	Cherokee County	n
+40025	Cimarron County	n
+40035	Craig County	n
+40037	Creek County	n
+40039	Custer County	n
+40041	Delaware County	n
+40043	Dewey County	n
+40045	Ellis County	n
+40047	Garfield County	n
+40053	Grant County	n
+40059	Harper County	n
+40071	Kay County	n
+40073	Kingfisher County	n
+40081	Lincoln County	n
+40083	Logan County	n
+40093	Major County	n
+40097	Mayes County	n
+40101	Muskogee County	n
+40103	Noble County	n
+40105	Nowata County	n
+40107	Okfuskee County	n
+40109	Oklahoma County	n
+40111	Okmulgee County	n
+40113	Osage County	n
+40115	Ottawa County	n
+40117	Pawnee County	n
+40119	Payne County	n
+40129	Roger Mills County	n
+40131	Rogers County	n
+40135	Sequoyah County	n
+40139	Texas County	n
+40143	Tulsa County	n
+40145	Wagoner County	n
+40147	Washington County	n
+40151	Woods County	n
+40153	Woodward County	n
+40005	Atoka County	s
+40009	Beckham County	s
+40013	Bryan County	s
+40015	Caddo County	s
+40019	Carter County	s
+40023	Choctaw County	s
+40027	Cleveland County	s
+40029	Coal County	s
+40031	Comanche County	s
+40033	Cotton County	s
+40049	Garvin County	s
+40051	Grady County	s
+40055	Greer County	s
+40057	Harmon County	s
+40061	Haskell County	s
+40063	Hughes County	s
+40065	Jackson County	s
+40067	Jefferson County	s
+40069	Johnston County	s
+40075	Kiowa County	s
+40077	Latimer County	s
+40079	Le Flore County	s
+40085	Love County	s
+40087	McClain County	s
+40089	McCurtain County	s
+40095	Marshall County	s
+40091	McIntosh County	s
+40099	Murray County	s
+40121	Pittsburg County	s
+40123	Pontotoc County	s
+40125	Pottawatomie County	s
+40127	Pushmataha County	s
+40133	Seminole County	s
+40137	Stephens County	s
+40141	Tillman County	s
+40149	Washita County	s
+41001	Baker County	n
+41003	Benton County	n
+41005	Clackamas County	n
+41007	Clatsop County	n
+41009	Columbia County	n
+41021	Gilliam County	n
+41023	Grant County	n
+41027	Hood River County	n
+41031	Jefferson County	n
+41041	Lincoln County	n
+41043	Linn County	n
+41047	Marion County	n
+41049	Morrow County	n
+41051	Multnomah County	n
+41053	Polk County	n
+41055	Sherman County	n
+41057	Tillamook County	n
+41059	Umatilla County	n
+41061	Union County	n
+41063	Wallowa County	n
+41065	Wasco County	n
+41067	Washington County	n
+41069	Wheeler County	n
+41071	Yamhill County	n
+41011	Coos County	s
+41013	Crook County	s
+41015	Curry County	s
+41017	Deschutes County	s
+41019	Douglas County	s
+41025	Harney County	s
+41029	Jackson County	s
+41033	Josephine County	s
+41035	Klamath County	s
+41037	Lake County	s
+41039	Lane County	s
+41045	Malheur County	s
+42015	Bradford County	n
+42023	Cameron County	n
+42025	Carbon County	n
+42027	Centre County	n
+42031	Clarion County	n
+42033	Clearfield County	n
+42035	Clinton County	n
+42037	Columbia County	n
+42039	Crawford County	n
+42047	Elk County	n
+42049	Erie County	n
+42053	Forest County	n
+42065	Jefferson County	n
+42069	Lackawanna County	n
+42079	Luzerne County	n
+42081	Lycoming County	n
+42083	McKean County	n
+42085	Mercer County	n
+42089	Monroe County	n
+42093	Montour County	n
+42097	Northumberland County	n
+42103	Pike County	n
+42105	Potter County	n
+42113	Sullivan County	n
+42115	Susquehanna County	n
+42117	Tioga County	n
+42119	Union County	n
+42121	Venango County	n
+42123	Warren County	n
+42127	Wayne County	n
+42131	Wyoming County	n
+42001	Adams County	s
+42003	Allegheny County	s
+42005	Armstrong County	s
+42007	Beaver County	s
+42009	Bedford County	s
+42011	Berks County	s
+42013	Blair County	s
+42017	Bucks County	s
+42019	Butler County	s
+42021	Cambria County	s
+42029	Chester County	s
+42041	Cumberland County	s
+42043	Dauphin County	s
+42045	Delaware County	s
+42051	Fayette County	s
+42055	Franklin County	s
+42057	Fulton County	s
+42059	Greene County	s
+42061	Huntingdon County	s
+42063	Indiana County	s
+42067	Juniata County	s
+42071	Lancaster County	s
+42073	Lawrence County	s
+42075	Lebanon County	s
+42077	Lehigh County	s
+42087	Mifflin County	s
+42091	Montgomery County	s
+42095	Northampton County	s
+42099	Perry County	s
+42101	Philadelphia County	s
+42107	Schuylkill County	s
+42109	Snyder County	s
+42111	Somerset County	s
+42125	Washington County	s
+42129	Westmoreland County	s
+42133	York County	s
+44001	Bristol County	
+44003	Kent County	
+44005	Newport County	
+44007	Providence County	
+44009	Washington County	
+45001	Abbeville County	n
+45007	Anderson County	n
+45017	Calhoun County	n
+45021	Cherokee County	n
+45023	Chester County	n
+45025	Chesterfield County	n
+45031	Darlington County	n
+45033	Dillon County	n
+45037	Edgefield County	n
+45039	Fairfield County	n
+45041	Florence County	n
+45045	Greenville County	n
+45047	Greenwood County	n
+45051	Horry County	n
+45055	Kershaw County	n
+45057	Lancaster County	n
+45059	Laurens County	n
+45061	Lee County	n
+45063	Lexington County	n
+45067	Marion County	n
+45069	Marlboro County	n
+45065	McCormick County	n
+45071	Newberry County	n
+45073	Oconee County	n
+45077	Pickens County	n
+45079	Richland County	n
+45081	Saluda County	n
+45083	Spartanburg County	n
+45085	Sumter County	n
+45087	Union County	n
+45091	York County	n
+45003	Aiken County	s
+45005	Allendale County	s
+45009	Bamberg County	s
+45011	Barnwell County	s
+45013	Beaufort County	s
+45015	Berkeley County	s
+45019	Charleston County	s
+45027	Clarendon County	s
+45029	Colleton County	s
+45035	Dorchester County	s
+45043	Georgetown County	s
+45049	Hampton County	s
+45053	Jasper County	s
+45075	Orangeburg County	s
+45089	Williamsburg County	s
+46005	Beadle County	n
+46011	Brookings County	n
+46013	Brown County	n
+46019	Butte County	n
+46021	Campbell County	n
+46025	Clark County	n
+46029	Codington County	n
+46031	Corson County	n
+46037	Day County	n
+46039	Deuel County	n
+46041	Dewey County	n
+46045	Edmunds County	n
+46049	Faulk County	n
+46051	Grant County	n
+46057	Hamlin County	n
+46059	Hand County	n
+46063	Harding County	n
+46069	Hyde County	n
+46077	Kingsbury County	n
+46081	Lawrence County	n
+46089	McPherson County	n
+46091	Marshall County	n
+46093	Meade County	n
+46105	Perkins County	n
+46107	Potter County	n
+46109	Roberts County	n
+46115	Spink County	n
+46119	Sully County	n
+46129	Walworth County	n
+46137	Ziebach County	n
+46003	Aurora County	s
+46007	Bennett County	s
+46009	Bon Homme County	s
+46015	Brule County	s
+46017	Buffalo County	s
+46023	Charles Mix County	s
+46027	Clay County	s
+46033	Custer County	s
+46035	Davison County	s
+46043	Douglas County	s
+46047	Fall River County	s
+46053	Gregory County	s
+46055	Haakon County	s
+46061	Hanson County	s
+46065	Hughes County	s
+46067	Hutchinson County	s
+46071	Jackson County	s
+46073	Jerauld County	s
+46075	Jones County	s
+46079	Lake County	s
+46083	Lincoln County	s
+46085	Lyman County	s
+46087	McCook County	s
+46095	Mellette County	s
+46097	Miner County	s
+46099	Minnehaha County	s
+46101	Moody County	s
+46103	Pennington County	s
+46111	Sanborn County	s
+46113	Shannon County	s
+46117	Stanley County	s
+46121	Todd County	s
+46123	Tripp County	s
+46125	Turner County	s
+46127	Union County	s
+46135	Yankton County	s
+47001	Anderson County	
+47003	Bedford County	
+47005	Benton County	
+47007	Bledsoe County	
+47009	Blount County	
+47011	Bradley County	
+47013	Campbell County	
+47015	Cannon County	
+47017	Carroll County	
+47019	Carter County	
+47021	Cheatham County	
+47023	Chester County	
+47025	Claiborne County	
+47027	Clay County	
+47029	Cocke County	
+47031	Coffee County	
+47033	Crockett County	
+47035	Cumberland County	
+47037	Davidson County	
+47039	Decatur County	
+47041	DeKalb County	
+47043	Dickson County	
+47045	Dyer County	
+47047	Fayette County	
+47049	Fentress County	
+47051	Franklin County	
+47053	Gibson County	
+47055	Giles County	
+47057	Grainger County	
+47059	Greene County	
+47061	Grundy County	
+47063	Hamblen County	
+47065	Hamilton County	
+47067	Hancock County	
+47069	Hardeman County	
+47071	Hardin County	
+47073	Hawkins County	
+47075	Haywood County	
+47077	Henderson County	
+47079	Henry County	
+47081	Hickman County	
+47083	Houston County	
+47085	Humphreys County	
+47087	Jackson County	
+47089	Jefferson County	
+47091	Johnson County	
+47093	Knox County	
+47095	Lake County	
+47097	Lauderdale County	
+47099	Lawrence County	
+47101	Lewis County	
+47103	Lincoln County	
+47105	Loudon County	
+47107	McMinn County	
+47109	McNairy County	
+47111	Macon County	
+47113	Madison County	
+47115	Marion County	
+47117	Marshall County	
+47119	Maury County	
+47121	Meigs County	
+47123	Monroe County	
+47125	Montgomery County	
+47127	Moore County	
+47129	Morgan County	
+47131	Obion County	
+47133	Overton County	
+47135	Perry County	
+47137	Pickett County	
+47139	Polk County	
+47141	Putnam County	
+47143	Rhea County	
+47145	Roane County	
+47147	Robertson County	
+47149	Rutherford County	
+47151	Scott County	
+47153	Sequatchie County	
+47155	Sevier County	
+47157	Shelby County	
+47159	Smith County	
+47161	Stewart County	
+47163	Sullivan County	
+47165	Sumner County	
+47167	Tipton County	
+47169	Trousdale County	
+47171	Unicoi County	
+47173	Union County	
+47175	Van Buren County	
+47177	Warren County	
+47179	Washington County	
+47181	Wayne County	
+47183	Weakley County	
+47185	White County	
+47187	Williamson County	
+47189	Wilson County	
+48011	Armstrong County	n
+48045	Briscoe County	n
+48065	Carson County	n
+48069	Castro County	n
+48075	Childress County	n
+48087	Collingsworth County	n
+48111	Dallam County	n
+48117	Deaf Smith County	n
+48129	Donley County	n
+48179	Gray County	n
+48191	Hall County	n
+48195	Hansford County	n
+48205	Hartley County	n
+48211	Hemphill County	n
+48233	Hutchinson County	n
+48295	Lipscomb County	n
+48341	Moore County	n
+48357	Ochiltree County	n
+48359	Oldham County	n
+48369	Parmer County	n
+48375	Potter County	n
+48381	Randall County	n
+48393	Roberts County	n
+48421	Sherman County	n
+48437	Swisher County	n
+48483	Wheeler County	n
+48003	Andrews County	nc
+48009	Archer County	nc
+48017	Bailey County	nc
+48023	Baylor County	nc
+48033	Borden County	nc
+48037	Bowie County	nc
+48059	Callahan County	nc
+48063	Camp County	nc
+48067	Cass County	nc
+48077	Clay County	nc
+48079	Cochran County	nc
+48085	Collin County	nc
+48097	Cooke County	nc
+48101	Cottle County	nc
+48107	Crosby County	nc
+48113	Dallas County	nc
+48115	Dawson County	nc
+48119	Delta County	nc
+48121	Denton County	nc
+48125	Dickens County	nc
+48133	Eastland County	nc
+48139	Ellis County	nc
+48143	Erath County	nc
+48147	Fannin County	nc
+48151	Fisher County	nc
+48153	Floyd County	nc
+48155	Foard County	nc
+48159	Franklin County	nc
+48165	Gaines County	nc
+48169	Garza County	nc
+48181	Grayson County	nc
+48183	Gregg County	nc
+48189	Hale County	nc
+48197	Hardeman County	nc
+48203	Harrison County	nc
+48207	Haskell County	nc
+48213	Henderson County	nc
+48217	Hill County	nc
+48219	Hockley County	nc
+48221	Hood County	nc
+48223	Hopkins County	nc
+48227	Howard County	nc
+48231	Hunt County	nc
+48237	Jack County	nc
+48251	Johnson County	nc
+48253	Jones County	nc
+48257	Kaufman County	nc
+48263	Kent County	nc
+48269	King County	nc
+48275	Knox County	nc
+48277	Lamar County	nc
+48279	Lamb County	nc
+48303	Lubbock County	nc
+48305	Lynn County	nc
+48315	Marion County	nc
+48317	Martin County	nc
+48335	Mitchell County	nc
+48337	Montague County	nc
+48343	Morris County	nc
+48345	Motley County	nc
+48349	Navarro County	nc
+48353	Nolan County	nc
+48363	Palo Pinto County	nc
+48365	Panola County	nc
+48367	Parker County	nc
+48379	Rains County	nc
+48387	Red River County	nc
+48397	Rockwall County	nc
+48401	Rusk County	nc
+48415	Scurry County	nc
+48417	Shackelford County	nc
+48423	Smith County	nc
+48425	Somervell County	nc
+48429	Stephens County	nc
+48433	Stonewall County	nc
+48439	Tarrant County	nc
+48441	Taylor County	nc
+48445	Terry County	nc
+48447	Throckmorton County	nc
+48449	Titus County	nc
+48459	Upshur County	nc
+48467	Van Zandt County	nc
+48485	Wichita County	nc
+48487	Wilbarger County	nc
+48497	Wise County	nc
+48499	Wood County	nc
+48501	Yoakum County	nc
+48503	Young County	nc
+48001	Anderson County	c
+48005	Angelina County	c
+48021	Bastrop County	c
+48027	Bell County	c
+48031	Blanco County	c
+48035	Bosque County	c
+48041	Brazos County	c
+48049	Brown County	c
+48051	Burleson County	c
+48053	Burnet County	c
+48073	Cherokee County	c
+48081	Coke County	c
+48083	Coleman County	c
+48093	Comanche County	c
+48095	Concho County	c
+48099	Coryell County	c
+48103	Crane County	c
+48105	Crockett County	c
+48109	Culberson County	c
+48135	Ector County	c
+48141	El Paso County	c
+48145	Falls County	c
+48161	Freestone County	c
+48171	Gillespie County	c
+48173	Glasscock County	c
+48185	Grimes County	c
+48193	Hamilton County	c
+48199	Hardin County	c
+48225	Houston County	c
+48229	Hudspeth County	c
+48235	Irion County	c
+48241	Jasper County	c
+48243	Jeff Davis County	c
+48267	Kimble County	c
+48281	Lampasas County	c
+48287	Lee County	c
+48289	Leon County	c
+48291	Liberty County	c
+48293	Limestone County	c
+48299	Llano County	c
+48301	Loving County	c
+48307	McCulloch County	c
+48309	McLennan County	c
+48313	Madison County	c
+48319	Mason County	c
+48327	Menard County	c
+48329	Midland County	c
+48331	Milam County	c
+48333	Mills County	c
+48339	Montgomery County	c
+48347	Nacogdoches County	c
+48351	Newton County	c
+48361	Orange County	c
+48371	Pecos County	c
+48373	Polk County	c
+48383	Reagan County	c
+48389	Reeves County	c
+48395	Robertson County	c
+48399	Runnels County	c
+48403	Sabine County	c
+48405	San Augustine County	c
+48407	San Jacinto County	c
+48411	San Saba County	c
+48413	Schleicher County	c
+48419	Shelby County	c
+48431	Sterling County	c
+48435	Sutton County	c
+48451	Tom Green County	c
+48453	Travis County	c
+48455	Trinity County	c
+48457	Tyler County	c
+48461	Upton County	c
+48471	Walker County	c
+48475	Ward County	c
+48477	Washington County	c
+48491	Williamson County	c
+48495	Winkler County	c
+48007	Aransas County	sc
+48013	Atascosa County	sc
+48015	Austin County	sc
+48019	Bandera County	sc
+48025	Bee County	sc
+48029	Bexar County	sc
+48039	Brazoria County	sc
+48043	Brewster County	sc
+48055	Caldwell County	sc
+48057	Calhoun County	sc
+48071	Chambers County	sc
+48089	Colorado County	sc
+48091	Comal County	sc
+48123	DeWitt County	sc
+48127	Dimmit County	sc
+48137	Edwards County	sc
+48149	Fayette County	sc
+48157	Fort Bend County	sc
+48163	Frio County	sc
+48167	Galveston County	sc
+48175	Goliad County	sc
+48177	Gonzales County	sc
+48187	Guadalupe County	sc
+48201	Harris County	sc
+48209	Hays County	sc
+48239	Jackson County	sc
+48245	Jefferson County	sc
+48255	Karnes County	sc
+48259	Kendall County	sc
+48265	Kerr County	sc
+48271	Kinney County	sc
+48283	La Salle County	sc
+48285	Lavaca County	sc
+48297	Live Oak County	sc
+48311	McMullen County	sc
+48321	Matagorda County	sc
+48323	Maverick County	sc
+48325	Medina County	sc
+48377	Presidio County	sc
+48385	Real County	sc
+48391	Refugio County	sc
+48443	Terrell County	sc
+48463	Uvalde County	sc
+48465	Val Verde County	sc
+48469	Victoria County	sc
+48473	Waller County	sc
+48481	Wharton County	sc
+48493	Wilson County	sc
+48507	Zavala County	sc
+48047	Brooks County	s
+48061	Cameron County	s
+48131	Duval County	s
+48215	Hidalgo County	s
+48247	Jim Hogg County	s
+48249	Jim Wells County	s
+48261	Kenedy County	s
+48273	Kleberg County	s
+48355	Nueces County	s
+48409	San Patricio County	s
+48427	Starr County	s
+48479	Webb County	s
+48489	Willacy County	s
+48505	Zapata County	s
+49003	Box Elder County	n
+49005	Cache County	n
+49009	Daggett County	n
+49011	Davis County	n
+49029	Morgan County	n
+49033	Rich County	n
+49043	Summit County	n
+49057	Weber County	n
+49007	Carbon County	c
+49013	Duchesne County	c
+49015	Emery County	c
+49019	Grand County	c
+49023	Juab County	c
+49027	Millard County	c
+49035	Salt Lake County	c
+49039	Sanpete County	c
+49041	Sevier County	c
+49045	Tooele County	c
+49047	Uintah County	c
+49049	Utah County	c
+49051	Wasatch County	c
+49001	Beaver County	s
+49017	Garfield County	s
+49021	Iron County	s
+49025	Kane County	s
+49031	Piute County	s
+49037	San Juan County	s
+49053	Washington County	s
+49055	Wayne County	s
+50001	Addison County	
+50003	Bennington County	
+50005	Caledonia County	
+50007	Chittenden County	
+50009	Essex County	
+50011	Franklin County	
+50013	Grand Isle County	
+50015	Lamoille County	
+50017	Orange County	
+50019	Orleans County	
+50021	Rutland County	
+50023	Washington County	
+50025	Windham County	
+50027	Windsor County	
+51013	Arlington County	n
+51015	Augusta County	n
+51017	Bath County	n
+51033	Caroline County	n
+51043	Clarke County	n
+51047	Culpeper County	n
+51059	Fairfax County	n
+51061	Fauquier County	n
+51069	Frederick County	n
+51079	Greene County	n
+51091	Highland County	n
+51099	King George County	n
+51107	Loudoun County	n
+51113	Madison County	n
+51137	Orange County	n
+51139	Page County	n
+51153	Prince William County	n
+51157	Rappahannock County	n
+51165	Rockingham County	n
+51171	Shenandoah County	n
+51177	Spotsylvania County	n
+51179	Stafford County	n
+51187	Warren County	n
+51193	Westmoreland County	n
+51510	Alexandria city	n
+51600	Fairfax city	n
+51610	Falls Church city	n
+51630	Fredericksburg city	n
+51660	Harrisonburg city	n
+51683	Manassas city	n
+51685	Manassas Park city	n
+51790	Staunton city	n
+51820	Waynesboro city	n
+51840	Winchester city	n
+51001	Accomack County	s
+51003	Albemarle County	s
+51005	Alleghany County	s
+51007	Amelia County	s
+51009	Amherst County	s
+51011	Appomattox County	s
+51019	Bedford County	s
+51021	Bland County	s
+51023	Botetourt County	s
+51025	Brunswick County	s
+51027	Buchanan County	s
+51029	Buckingham County	s
+51031	Campbell County	s
+51035	Carroll County	s
+51036	Charles City County	s
+51037	Charlotte County	s
+51041	Chesterfield County	s
+51045	Craig County	s
+51049	Cumberland County	s
+51051	Dickenson County	s
+51053	Dinwiddie County	s
+51057	Essex County	s
+51063	Floyd County	s
+51065	Fluvanna County	s
+51067	Franklin County	s
+51071	Giles County	s
+51073	Gloucester County	s
+51075	Goochland County	s
+51077	Grayson County	s
+51081	Greensville County	s
+51083	Halifax County	s
+51085	Hanover County	s
+51087	Henrico County	s
+51089	Henry County	s
+51093	Isle of Wight County	s
+51095	James City County	s
+51097	King and Queen County	s
+51101	King William County	s
+51103	Lancaster County	s
+51105	Lee County	s
+51109	Louisa County	s
+51111	Lunenburg County	s
+51115	Mathews County	s
+51117	Mecklenburg County	s
+51119	Middlesex County	s
+51121	Montgomery County	s
+51125	Nelson County	s
+51127	New Kent County	s
+51131	Northampton County	s
+51133	Northumberland County	s
+51135	Nottoway County	s
+51141	Patrick County	s
+51143	Pittsylvania County	s
+51145	Powhatan County	s
+51147	Prince Edward County	s
+51149	Prince George County	s
+51155	Pulaski County	s
+51159	Richmond County	s
+51161	Roanoke County	s
+51163	Rockbridge County	s
+51167	Russell County	s
+51169	Scott County	s
+51173	Smyth County	s
+51175	Southampton County	s
+51181	Surry County	s
+51183	Sussex County	s
+51185	Tazewell County	s
+51191	Washington County	s
+51195	Wise County	s
+51197	Wythe County	s
+51199	York County	s
+51515	Bedford city	s
+51520	Bristol city	s
+51530	Buena Vista city	s
+51540	Charlottesville city	s
+51550	Chesapeake city	s
+51570	Colonial Heights city	s
+51580	Covington city	s
+51590	Danville city	s
+51595	Emporia city	s
+51620	Franklin city	s
+51640	Galax city	s
+51650	Hampton city	s
+51670	Hopewell city	s
+51678	Lexington city	s
+51680	Lynchburg city	s
+51690	Martinsville city	s
+51700	Newport News city	s
+51710	Norfolk city	s
+51720	Norton city	s
+51730	Petersburg city	s
+51735	Poquoson city	s
+51740	Portsmouth city	s
+51750	Radford city	s
+51760	Richmond city	s
+51770	Roanoke city	s
+51775	Salem city	s
+51800	Suffolk city	s
+51810	Virginia Beach city	s
+51830	Williamsburg city	s
+53007	Chelan County	n
+53009	Clallam County	n
+53017	Douglas County	n
+53019	Ferry County	n
+53029	Island County	n
+53031	Jefferson County	n
+53033	King County	n
+53035	Kitsap County	n
+53043	Lincoln County	n
+53047	Okanogan County	n
+53051	Pend Oreille County	n
+53055	San Juan County	n
+53057	Skagit County	n
+53061	Snohomish County	n
+53063	Spokane County	n
+53065	Stevens County	n
+53073	Whatcom County	n
+53001	Adams County	s
+53003	Asotin County	s
+53005	Benton County	s
+53011	Clark County	s
+53013	Columbia County	s
+53015	Cowlitz County	s
+53021	Franklin County	s
+53023	Garfield County	s
+53025	Grant County	s
+53027	Grays Harbor County	s
+53037	Kittitas County	s
+53039	Klickitat County	s
+53041	Lewis County	s
+53045	Mason County	s
+53049	Pacific County	s
+53053	Pierce County	s
+53059	Skamania County	s
+53067	Thurston County	s
+53069	Wahkiakum County	s
+53071	Walla Walla County	s
+53075	Whitman County	s
+53077	Yakima County	s
+54001	Barbour County	n
+54003	Berkeley County	n
+54009	Brooke County	n
+54017	Doddridge County	n
+54023	Grant County	n
+54027	Hampshire County	n
+54029	Hancock County	n
+54031	Hardy County	n
+54033	Harrison County	n
+54037	Jefferson County	n
+54049	Marion County	n
+54051	Marshall County	n
+54057	Mineral County	n
+54061	Monongalia County	n
+54065	Morgan County	n
+54069	Ohio County	n
+54073	Pleasants County	n
+54077	Preston County	n
+54085	Ritchie County	n
+54091	Taylor County	n
+54093	Tucker County	n
+54095	Tyler County	n
+54103	Wetzel County	n
+54105	Wirt County	n
+54107	Wood County	n
+54005	Boone County	s
+54007	Braxton County	s
+54011	Cabell County	s
+54013	Calhoun County	s
+54015	Clay County	s
+54019	Fayette County	s
+54021	Gilmer County	s
+54025	Greenbrier County	s
+54035	Jackson County	s
+54039	Kanawha County	s
+54041	Lewis County	s
+54043	Lincoln County	s
+54045	Logan County	s
+54047	McDowell County	s
+54053	Mason County	s
+54055	Mercer County	s
+54059	Mingo County	s
+54063	Monroe County	s
+54067	Nicholas County	s
+54071	Pendleton County	s
+54075	Pocahontas County	s
+54079	Putnam County	s
+54081	Raleigh County	s
+54083	Randolph County	s
+54087	Roane County	s
+54089	Summers County	s
+54097	Upshur County	s
+54099	Wayne County	s
+54101	Webster County	s
+54109	Wyoming County	s
+55003	Ashland County	n
+55007	Bayfield County	n
+55013	Burnett County	n
+55031	Douglas County	n
+55037	Florence County	n
+55041	Forest County	n
+55051	Iron County	n
+55085	Oneida County	n
+55099	Price County	n
+55113	Sawyer County	n
+55125	Vilas County	n
+55129	Washburn County	n
+55005	Barron County	c
+55009	Brown County	c
+55011	Buffalo County	c
+55017	Chippewa County	c
+55019	Clark County	c
+55029	Door County	c
+55033	Dunn County	c
+55035	Eau Claire County	c
+55053	Jackson County	c
+55061	Kewaunee County	c
+55067	Langlade County	c
+55069	Lincoln County	c
+55073	Marathon County	c
+55075	Marinette County	c
+55078	Menominee County	c
+55083	Oconto County	c
+55087	Outagamie County	c
+55091	Pepin County	c
+55093	Pierce County	c
+55095	Polk County	c
+55097	Portage County	c
+55107	Rusk County	c
+55109	St. Croix County	c
+55115	Shawano County	c
+55119	Taylor County	c
+55121	Trempealeau County	c
+55135	Waupaca County	c
+55141	Wood County	c
+55001	Adams County	s
+55015	Calumet County	s
+55021	Columbia County	s
+55023	Crawford County	s
+55025	Dane County	s
+55027	Dodge County	s
+55039	Fond du Lac County	s
+55043	Grant County	s
+55045	Green County	s
+55047	Green Lake County	s
+55049	Iowa County	s
+55055	Jefferson County	s
+55057	Juneau County	s
+55059	Kenosha County	s
+55063	La Crosse County	s
+55065	Lafayette County	s
+55071	Manitowoc County	s
+55077	Marquette County	s
+55079	Milwaukee County	s
+55081	Monroe County	s
+55089	Ozaukee County	s
+55101	Racine County	s
+55103	Richland County	s
+55105	Rock County	s
+55111	Sauk County	s
+55117	Sheboygan County	s
+55123	Vernon County	s
+55127	Walworth County	s
+55131	Washington County	s
+55133	Waukesha County	s
+55137	Waushara County	s
+55139	Winnebago County	s
+56023	Lincoln County	w
+56035	Sublette County	w
+56039	Teton County	w
+56041	Uinta County	w
+56013	Fremont County	wc
+56017	Hot Springs County	wc
+56029	Park County	wc
+56037	Sweetwater County	wc
+56003	Big Horn County	ec
+56007	Carbon County	ec
+56019	Johnson County	ec
+56025	Natrona County	ec
+56033	Sheridan County	ec
+56043	Washakie County	ec
+56001	Albany County	e
+56005	Campbell County	e
+56009	Converse County	e
+56011	Crook County	e
+56015	Goshen County	e
+56021	Laramie County	e
+56027	Niobrara County	e
+56031	Platte County	e
+56045	Weston County	e
