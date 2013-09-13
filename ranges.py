@@ -1,24 +1,10 @@
+from optparse import OptionParser
+
 from osgeo import ogr, osr
 from shapely.geometry import LineString, Point
 from shapely import wkb
 
-#
-# North America Albers Equal Area Conic
-# http://spatialreference.org/ref/esri/102008/
-#
-sref_na = osr.SpatialReference()
-sref_na.ImportFromProj4('+proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs')
-
-#
-# Web Spherical Mercator
-# http://spatialreference.org/ref/sr-org/6864/
-#
-sref_sm = osr.SpatialReference()
-sref_sm.ImportFromProj4('+proj=merc +lon_0=0 +k=1 +x_0=0 +y_0=0 +a=6378137 +b=6378137 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs')
-
-xform_na2sm = osr.CoordinateTransformation(sref_na, sref_sm)
-
-def features(layer):
+def features(layer, sref_local):
     ''' Generate a stream of left and right offset streets.
     
         See also `CREATE TABLE tiger_2012_edges_102008` from
@@ -31,7 +17,7 @@ def features(layer):
     STATEFP  = names.index('STATEFP')
     COUNTYFP = names.index('COUNTYFP')
     ROADFLG  = names.index('ROADFLG')
-    MTFCC    = names.index('MTFCC')
+    TLID     = names.index('TLID')
     FULLNAME = names.index('FULLNAME')
 
     OFFSETL  = names.index('OFFSETL')
@@ -49,7 +35,7 @@ def features(layer):
             continue
         
         geometry = feature.GetGeometryRef()
-        geometry.TransformTo(sref_na)
+        geometry.TransformTo(sref_local)
         shape = wkb.loads(geometry.ExportToWkb())
         
         if shape.length <= 40:
@@ -58,7 +44,7 @@ def features(layer):
         statefp  = feature.GetField(STATEFP)
         countyfp = feature.GetField(COUNTYFP)
         fullname = feature.GetField(FULLNAME)
-        mtfcc    = feature.GetField(MTFCC)
+        tlid     = feature.GetField(TLID)
         
         if feature.GetField(LFROMADD):
             
@@ -73,7 +59,7 @@ def features(layer):
             for geom in geoms:
                 yield (
                     LineString(geom),
-                    statefp, countyfp, fullname, mtfcc,
+                    statefp, countyfp, fullname, tlid,
                     fromadd, toadd, offset, zip
                     )
         
@@ -91,7 +77,7 @@ def features(layer):
                 # When offsetting to the right, coordinates come back reversed.
                 yield (
                     LineString(list(reversed(geom.coords))),
-                    statefp, countyfp, fullname, mtfcc,
+                    statefp, countyfp, fullname, tlid,
                     fromadd, toadd, offset, zip
                     )
 
@@ -106,7 +92,7 @@ def define_fields(source_layer, dest_layer):
         ('STATEFP', 'STATEFP'),
         ('COUNTYFP', 'COUNTYFP'),
         ('FULLNAME', 'FULLNAME'),
-        ('MTFCC', 'MTFCC'),
+        ('TLID', 'TLID'),
         ('LFROMADD', 'FROMADD'),
         ('LTOADD', 'TOADD'),
         ('OFFSETL', 'OFFSET'),
@@ -170,12 +156,42 @@ def truncate(line, distance):
             cp = _line.interpolate(_distance)
             return LineString(_coords[:i+1] + [(cp.x, cp.y)])
 
+#
+# North America Albers Equal Area Conic
+# http://spatialreference.org/ref/esri/102008/
+#
+defaults = dict(proj4='+proj=aea +lat_1=20 +lat_2=60 +lat_0=40 +lon_0=-96 +x_0=0 +y_0=0 +ellps=GRS80 +datum=NAD83 +units=m +no_defs')
+
+parser = OptionParser(usage='%prog [options] <input file> <output file>')
+
+parser.set_defaults(**defaults)
+
+parser.add_option('-p', '--proj4', dest='proj4',
+                  help='Proj.4 string to use as local projection, default "%(proj4)s"' % defaults)
+
 if __name__ == '__main__':
+
+    options, (input_fn, output_fn) = parser.parse_args()
 
     # This. Is. Python.
     ogr.UseExceptions()
     
-    input_fn = 'tl_2013_06001_edges.shp'
+    #
+    # Prepare projections.
+    #
+    sref_loc = osr.SpatialReference()
+    sref_loc.ImportFromProj4(options.proj4)
+
+    # Web Spherical Mercator
+    # http://spatialreference.org/ref/sr-org/6864/
+    sref_sm = osr.SpatialReference()
+    sref_sm.ImportFromProj4('+proj=merc +lon_0=0 +k=1 +x_0=0 +y_0=0 +a=6378137 +b=6378137 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs')
+    
+    xform_loc2sm = osr.CoordinateTransformation(sref_loc, sref_sm)
+    
+    #
+    # Open files.
+    #
     input_ds = ogr.Open(input_fn)
     input_lyr = input_ds.GetLayer(0)
     input_gt = input_lyr.GetLayerDefn().GetGeomType()
@@ -184,13 +200,13 @@ if __name__ == '__main__':
         raise ValueError('Wrong geometry type in %s: %d' % (input_fn, input_gt))
     
     output_dr = ogr.GetDriverByName('ESRI Shapefile')
-    output_ds = output_dr.CreateDataSource('output.shp')
+    output_ds = output_dr.CreateDataSource(output_fn)
     output_lyr = output_ds.CreateLayer('', sref_sm, ogr.wkbLineString)
     
     define_fields(input_lyr, output_lyr)
     
-    for (index, details) in enumerate(features(input_lyr)):
-        shape, statefp, countyfp, fullname, mtfcc, fromadd, toadd, offset, zip = details
+    for (index, details) in enumerate(features(input_lyr, sref_loc)):
+        shape, statefp, countyfp, fullname, tlid, fromadd, toadd, offset, zip = details
 
         print statefp, countyfp, fullname
         
@@ -199,7 +215,7 @@ if __name__ == '__main__':
         feature.SetField('STATEFP', statefp)
         feature.SetField('COUNTYFP', countyfp)
         feature.SetField('FULLNAME', fullname)
-        feature.SetField('MTFCC', mtfcc)
+        feature.SetField('TLID', tlid)
         feature.SetField('FROMADD', fromadd)
         feature.SetField('TOADD', toadd)
         feature.SetField('OFFSET', offset)
@@ -207,7 +223,7 @@ if __name__ == '__main__':
         
         truncated_shape = truncate(shape, 15)
         geometry = ogr.CreateGeometryFromWkb(wkb.dumps(truncated_shape))
-        geometry.Transform(xform_na2sm)
+        geometry.Transform(xform_loc2sm)
         feature.SetGeometry(geometry)
         
         output_lyr.CreateFeature(feature)
