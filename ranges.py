@@ -57,6 +57,11 @@ def features(layer, sref_local):
             geoms = getattr(shape_left, 'geoms', [shape_left])
             
             for geom in geoms:
+                if geom.is_empty:
+                    continue
+                
+                print statefp, countyfp, fullname, '(L)'
+                
                 yield (
                     LineString(geom),
                     statefp, countyfp, fullname, tlid,
@@ -74,6 +79,11 @@ def features(layer, sref_local):
             geoms = getattr(shape_right, 'geoms', [shape_right])
             
             for geom in geoms:
+                if geom.is_empty:
+                    continue
+                
+                print statefp, countyfp, fullname, '(R)'
+                
                 # When offsetting to the right, coordinates come back reversed.
                 yield (
                     LineString(list(reversed(geom.coords))),
@@ -208,8 +218,6 @@ if __name__ == '__main__':
     for (index, details) in enumerate(features(input_lyr, sref_loc)):
         shape, statefp, countyfp, fullname, tlid, fromadd, toadd, offset, zip = details
 
-        print statefp, countyfp, fullname
-        
         feature = ogr.Feature(output_lyr.GetLayerDefn())
 
         feature.SetField('STATEFP', statefp)
