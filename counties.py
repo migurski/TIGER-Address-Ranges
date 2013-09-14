@@ -31,9 +31,6 @@ def counties():
             county = dict(projection=state_planes[plane_key])
             county.update(dict(fips=state_fips+county_fips))
             
-            if state_fips != '09':
-                continue
-            
             if 'proj4' not in county['projection']:
                 county['projection']['proj4'] \
                     = urlopen(county['projection']['href']).read().strip()
