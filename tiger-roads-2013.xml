@@ -1,0 +1,182 @@
+<!-- This stylesheet uses features only available in mapnik builds with
+     libxml2 as the XML parser. Furthermore, there are other features
+     and behaviour that necessitate an upgrade to mapnik 0.7.1 -->
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over" background-color="transparent" minimum-version="0.7.2">
+  <!--Settings for Mapnik Fonts
+Uncomment the unifont entries if you have that font installed
+in your mapnik fonts dir, and want to use it as a fallback font.
+Mapnik includes this font by default since r1328.
+To see the fonts you have installed with Mapnik do:
+ls `python -c "import mapnik;print mapnik.fontscollectionpath"`-->
+
+<FontSet name="book-fonts">
+  <Font face-name="DejaVu Sans Book"/>
+  <!--Font face_name="unifont Medium" /-->
+</FontSet>
+<FontSet name="bold-fonts">
+  <Font face-name="DejaVu Sans Bold"/>
+  <!--Font face_name="unifont Medium" /-->
+</FontSet>
+<FontSet name="oblique-fonts">
+  <Font face-name="DejaVu Sans Oblique"/>
+  <!--Font face_name="unifont Medium" /-->
+</FontSet>
+<Style name="road-lines">
+    <!--
+    <Rule>
+      <LineSymbolizer stroke-width="0.5" stroke="#f00"></LineSymbolizer>
+      <TextSymbolizer size="15" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="15.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[mtfcc]</TextSymbolizer>
+    </Rule>
+    -->
+    <Rule>
+      <Filter>[mtfcc]='S1400'</Filter> <!-- Local neighborhood road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="3.0" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="2.0" stroke="#fff"></LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1200'</Filter> <!--Secondary road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="4.2" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="3.2" stroke="#fff"></LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1100'</Filter> <!--Primary road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="5.5" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="4.5" stroke="#fff"></LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1630'</Filter> <!-- Local neighborhood road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="3.0" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="2.0" stroke="#fff"></LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1640'</Filter> <!--Service/Frontage road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="1.7" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="0.7" stroke="#fff"></LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1740'</Filter> <!--Private road for service vehicles. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="1.7" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="0.7" stroke="#fff"></LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1730'</Filter> <!-- Alley. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="1.7" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="0.7" stroke="#fff"></LineSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1820'</Filter> <!-- Path/Bike Path. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <LineSymbolizer stroke-width="2.0" stroke="#000"></LineSymbolizer>
+      <LineSymbolizer stroke-width="1.0" stroke="#fff" stroke-dasharray="3,3"></LineSymbolizer>
+    </Rule>
+</Style>
+
+<Style name="road-names">
+    <Rule>
+      <Filter>[mtfcc]='S1400'</Filter> <!-- Local neighborhood road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="15" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="15.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1200'</Filter> <!--Secondary road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="15" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="15.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1100'</Filter> <!--Primary road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="15" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="15.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1630'</Filter> <!-- Local neighborhood road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="15" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="15.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1640'</Filter> <!--Service/Frontage road. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="15" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="15.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1740'</Filter> <!--Private road for service vehicles. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="15" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="15.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1730'</Filter> <!-- Alley. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="9" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="7.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+    <Rule>
+      <Filter>[mtfcc]='S1820'</Filter> <!-- Path/Bike Path. -->
+      <!-- <MaxScaleDenominator>25000</MaxScaleDenominator> -->
+      <TextSymbolizer size="9" fill="#fff" spacing="750" placement="line" minimum-distance="18" allow-overlap="false" dy="7.0" fontset-name="book-fonts" halo-fill="#000" halo-radius="1">[longname]</TextSymbolizer>
+    </Rule>
+
+
+</Style>
+
+<Layer name="road_lines" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+     <StyleName>road-lines</StyleName>
+     <Datasource>
+      <Parameter name="table">
+      (select the_geom,longname,mtfcc
+       from tiger_2012_roads
+      ) as roads
+      </Parameter>
+      <!--
+Settings for your postgres setup.
+
+Note: feel free to leave password, host, port, or use blank
+-->
+
+<Parameter name="type">postgis</Parameter>
+<Parameter name="password">gis</Parameter>
+<Parameter name="host">127.0.0.1</Parameter>
+<Parameter name="port"/>
+<Parameter name="user">gis</Parameter>
+<Parameter name="dbname">tiger</Parameter>
+<!-- this should be 'false' if you are manually providing the 'extent' -->
+<Parameter name="estimate_extent">false</Parameter>
+<!-- manually provided extent in epsg 900913 for whole globe -->
+<!-- providing this speeds up Mapnik database queries -->
+<Parameter name="extent">-20037508.34,-20037508.34,20037508.34,20037508.34</Parameter>
+
+    </Datasource>
+</Layer>
+<Layer name="road_names" status="on" srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +no_defs +over">
+     <StyleName>road-names</StyleName>
+     <Datasource>
+      <Parameter name="table">
+      (select the_geom,longname,mtfcc
+       from tiger_2012_roads
+      ) as roads
+      </Parameter>
+      <!--
+Settings for your postgres setup.
+
+Note: feel free to leave password, host, port, or use blank
+-->
+
+<Parameter name="type">postgis</Parameter>
+<Parameter name="password">gis</Parameter>
+<Parameter name="host">127.0.0.1</Parameter>
+<Parameter name="port">6432</Parameter>
+<Parameter name="user">gis</Parameter>
+<Parameter name="dbname">tiger</Parameter>
+<!-- this should be 'false' if you are manually providing the 'extent' -->
+<Parameter name="estimate_extent">false</Parameter>
+<!-- manually provided extent in epsg 900913 for whole globe -->
+<!-- providing this speeds up Mapnik database queries -->
+<Parameter name="extent">-20037508.34,-20037508.34,20037508.34,20037508.34</Parameter>
+
+    </Datasource>
+</Layer>
+</Map>
